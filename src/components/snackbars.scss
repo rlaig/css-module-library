@@ -1,0 +1,205 @@
+/*---
+title:   Snackbars
+section: Overview
+---
+`snackbars.module.css`
+
+#### Snackbar Structure
+`.snackbar` - base snackbar class
+
+Components:
+- `.snackbarContent` - snackbar text content
+- `.snackbarAction` - snackbar action button / link
+
+```demo:html
+<div class="snackbar">
+  <div class="snackbarContent">A neutral thing happened.</div>
+  <div class="snackbarAction">Action</div>
+</div>
+```
+```html
+<div class="snackbar">
+  <div class="snackbarContent">A neutral thing happened.</div>
+  <div class="snackbarAction">Action</div>
+</div>
+```
+
+#### Snackbar Types
+- `.snackbarInfo` (default)
+- `.snackbarWarning`
+- `.snackbarError`
+- `.snackbarSuccess`
+
+```demo:html
+<div class="snackbar snackbarInfo">
+  <div class="snackbarContent">A neutral thing happened.</div>
+</div>
+<div class="snackbar snackbarWarning">
+  <div class="snackbarContent">A warning about a thing.</div>
+</div>
+<div class="snackbar snackbarError">
+  <div class="snackbarContent">A bad thing happened.</div>
+</div>
+<div class="snackbar snackbarSuccess">
+  <div class="snackbarContent">A good thing happened.</div>
+</div>
+```
+```html
+<div class="snackbar snackbarInfo">
+  <div class="snackbarContent">A neutral thing happened.</div>
+</div>
+<div class="snackbar snackbarWarning">
+  <div class="snackbarContent">A warning about a thing.</div>
+</div>
+<div class="snackbar snackbarError">
+  <div class="snackbarContent">A bad thing happened.</div>
+</div>
+<div class="snackbar snackbarSuccess">
+  <div class="snackbarContent">A good thing happened.</div>
+</div>
+```
+
+#### Snackbar Action Size
+- `.snackbarShort` (default)
+- `.snackbarLong`
+
+```demo:html
+<div class="snackbar snackbarShort">
+  <div class="snackbarContent">A neutral thing happened.</div>
+  <div class="snackbarAction">Action</div>
+</div>
+<div class="snackbar snackbarLong">
+  <div class="snackbarContent">A warning about a thing.</div>
+  <div class="snackbarAction">A really long action button</div>
+</div>
+```
+```html
+<div class="snackbar snackbarShort">
+  <div class="snackbarContent">A neutral thing happened.</div>
+  <div class="snackbarAction">Action</div>
+</div>
+<div class="snackbar snackbarLong">
+  <div class="snackbarContent">A warning about a thing.</div>
+  <div class="snackbarAction">A really long action button</div>
+</div>
+```
+
+*/
+
+.snackbar {
+  border: 0px;
+  border-radius: 8px;
+  box-shadow: $shadowSwitch;
+  
+  display: flex;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $white;
+  
+  margin: 16px 16px 0px;
+  padding: 14px 16px;
+
+  &:has(.snackbarAction) {
+    padding: 12px 16px;
+  }
+
+  align-items: center;
+  justify-content: space-between;
+
+  // snackbar - sticky
+  &.sticky {
+    position: sticky;
+    top: 16px;
+    width: inherit;
+    margin: 16px;
+    z-index: 999;
+  }
+
+  // Snackbar - components
+  // snackbarContent | snackbarAction
+  .snackbarContent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+  }
+  .snackbarAction {
+    display: flex;
+    @include no-select;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    
+    justify-content: right;
+    align-items: right;
+    text-align: right;
+    color: $white;
+
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  // Snackbar - types
+  // snackbarInfo | snackbarWarning | snackbarError | snackbarSuccess
+  background-color: $nobel-800;
+
+  &.snackbarInfo {
+    background-color: $nobel-800;
+  }
+  &.snackbarWarning {
+    background-color: $nobel-800;
+    
+    div:first-child:before {
+      @include snackbar-icon;
+      mask-image: $iconInfo; 
+      -webkit-mask-image: $iconInfo;
+    }
+  }
+  &.snackbarError {
+    background-color: $valencia-700;
+    
+    div:first-child:before {
+      @include snackbar-icon;
+      mask-image: $iconWarn; 
+      -webkit-mask-image: $iconWarn;
+    }
+  }
+  &.snackbarSuccess {
+    background-color: $mountainMedows-600;
+    
+    div:first-child:before {
+      @include snackbar-icon;
+      mask-image: $iconTick; 
+      -webkit-mask-image: $iconTick;
+    }
+  }
+
+  // Snack bar - action size
+  // snackbarShort | snackbarLong
+  flex-direction: row;
+  .snackbarAction {
+    width: 30%;
+  }
+
+  &.snackbarShort {
+    flex-direction: row;
+    
+    .snackbarAction {
+      width: 30%;
+    }
+  }
+  &.snackbarLong {
+    flex-direction: column;
+    
+    .snackbarAction {
+      align-self: stretch;
+      
+      margin-top: 8px;
+      width: 100%;
+    }
+  }
+}

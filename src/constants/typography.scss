@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900,italic');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,500,700,900,italic');
+@import '../fonts/SFProDisplay.scss';
+
+// Typography font, weight and sizes
+// https://www.figma.com/file/21Agl4Iiwe7Uhps81wA8le/Typography?node-id=0%3A441&t=3dmOoUKr2wK41VmR-0
+
+/*---
+title:   Typography
+section: Overview
+---
+`typography.module.css`
+
+Font family class can be applied to any element but it's highly recommended to add on document body or main app container to apply to all.
+Since font family are assigned per device you may need to add logic to determine device and apply the appropriate font family to use.
+*/
+
+/*---
+title:   Font Family
+section: Typography
+---
+Each font family are aligned for each type of device and are assigned as the following
+
+Use `fontWeb` class for web use
+
+Then, when viewing on mobile device using a webview per device
+`fontAndroid` or `fontIos`
+
+```demo:html
+<div class="fontWeb">
+  <div class="spaced sizeH1 weightHeavy">Noto Sans</div>
+</div>
+<div class="fontAndroid">
+  <div class="spaced sizeH1 weightHeavy">Roboto</div>
+</div>
+<div class="fontIos">
+  <div class="spaced sizeH1 weightHeavy">SF Pro Display</div>
+</div>
+```
+```html
+<div class="fontWeb">
+  <div class="sizeH1 weightHeavy">Noto Sans</div>
+</div>
+<div class="fontAndroid">
+  <div class="sizeH1 weightHeavy">Roboto</div>
+</div>
+<div class="fontIos">
+  <div class="sizeH1 weightHeavy">SF Pro Display</div>
+</div>
+```
+*/
+
+
+/*---
+title:   Sizes and Weights
+section: Typography
+---
+Font size and weight
+
+#### Headings
+```demo:html
+<div class="fontWeb">
+  <div class="sizeH1">H1 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeH2">H2 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeH3">H3 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeH4">H4 - The quick brown fox jumps over the lazy dog</div>
+</div>
+```
+```html
+<div class="fontWeb">
+  <div class="sizeH1">H1 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeH2">H2 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeH3">H3 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeH4">H4 - The quick brown fox jumps over the lazy dog</div>
+</div>
+```
+
+#### Body & Caption
+```demo:html
+<div class="fontWeb">
+  <div class="sizeBody1">Body1 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeBody2">Body2 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeCaption">Caption - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeCaption2">Caption 2 - The quick brown fox jumps over the lazy dog</div>
+</div>
+```
+```html
+<div class="fontWeb">
+  <div class="sizeBody1">Body1 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeBody2">Body2 - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeCaption">Caption - The quick brown fox jumps over the lazy dog</div>
+  <div class="sizeCaption2">Caption 2 - The quick brown fox jumps over the lazy dog</div>
+</div>
+```
+
+#### Weights and Style
+```demo:html
+<div class="fontWeb">
+  <div class="styleStrikethrough">The quick brown fox jumps over the lazy dog</div>
+  <div class="styleItalic">The quick brown fox jumps over the lazy dog</div>
+  <div class="weightMedium">The quick brown fox jumps over the lazy dog</div>
+  <div class="weightBold">The quick brown fox jumps over the lazy dog</div>
+  <div class="weightHeavy">The quick brown fox jumps over the lazy dog</div>
+</div>
+```
+```html
+<div class="fontWeb">
+  <div class="styleStrikethrough">The quick brown fox jumps over the lazy dog</div>
+  <div class="styleItalic">The quick brown fox jumps over the lazy dog</div>
+  <div class="weightMedium">The quick brown fox jumps over the lazy dog</div>
+  <div class="weightBold">The quick brown fox jumps over the lazy dog</div>
+  <div class="weightHeavy">The quick brown fox jumps over the lazy dog</div>
+</div>
+```
+*/
+
+// Font family per device
+$fontIos: 'SF Pro Display', sans-serif;
+$fontAndroid: 'Roboto', sans-serif;
+$fontWeb: 'Noto Sans', sans-serif;
+
+// Font list
+$fontList: (
+  'Ios': $fontIos,
+  'Android': $fontAndroid,
+  'Web': $fontWeb,
+);
+
+// Font weights
+$fontWeights: (
+  "Regular": 400,
+  "Medium": 500,
+  "Bold": 700,
+  "Heavy": 900,
+);
+
+// Font sizes per font family
+// size: font-size line-height letter-spacing
+$fontIosSizes: (
+  "H1": 32px 40px 0.25px,
+  "H2": 24px 32px 0.25px,
+  "H3": 20px 28px 0.15px,
+  "H4": 18px 24px 0.25px,
+  "Body1": 16px 24px 0.25px,
+  "Body2": 14px 20px 0.25px,
+  "Caption": 12px 16px 0.25px,
+);
+$fontIosHeadings: (
+  "H1": 32px 40px 0.25px,
+  "H2": 24px 32px 0.25px,
+  "H3": 20px 28px 0.15px,
+  "H4": 18px 24px 0.25px,
+);
+
+$fontAndroidSizes: (
+  "H1": 32px 40px 0.25px,
+  "H2": 24px 32px 0.25px,
+  "H3": 20px 28px 0.15px,
+  "H4": 18px 24px 0.15px,
+  "Body1": 16px 24px 0.25px,
+  "Body2": 14px 20px 0.25px,
+  "Caption": 12px 16px 0.25px,
+);
+$fontAndroidHeadings: (
+  "H1": 32px 40px 0.25px,
+  "H2": 24px 32px 0.25px,
+  "H3": 20px 28px 0.15px,
+  "H4": 18px 24px 0.15px,
+);
+
+$fontWebSizes: (
+  "H1": 32px 40px 0.25px,
+  "H2": 24px 32px 0.25px,
+  "H3": 20px 28px 0.15px,
+  "H4": 18px 24px 0.25px,
+  "Body1": 16px 24px 0.25px,
+  "Body2": 14px 20px 0.25px,
+  "Caption": 12px 16px 0.25px,
+  "Caption2": 10px 12px 0.25px,
+);
+$fontWebHeadings: (
+  "H1": 32px 40px 0.25px,
+  "H2": 24px 32px 0.25px,
+  "H3": 20px 28px 0.15px,
+  "H4": 18px 24px 0.25px,
+);

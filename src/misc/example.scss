@@ -1,0 +1,78 @@
+// used by mdcss for showing demo iframe on 'style-dist'
+body {
+  font-family: 'Noto Sans';
+}
+
+.demoIcon {
+  float: left;
+  height: 42px;
+  width: 42px;
+  margin: 7px 10px;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.demoShadow {
+  border-radius: 6px;
+  padding: 14px;
+}
+
+.clearWithHr {height: 5px; border-bottom:1px solid #e2e2e2}
+// clear dividers
+.clear {clear:both;}
+.clear5 {height: 5px; clear:both;}
+.clear10 {height: 10px; clear:both;}
+.clear20 {height: 20px; clear:both;}
+
+div.spaced {
+  padding: 10px;
+  font-size: 12px;
+}
+
+button.spaced {
+  margin-bottom: 10px;
+}
+
+#copy_dialog {
+  background-color: #eee;
+  color: #222;
+  border: 1px solid #e2e2e2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  padding: 4px 8px;
+  -webkit-animation-duration: 300ms;animation-duration: 300ms;
+  -webkit-animation-fill-mode: both;animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+#copy_dialog.fadeOut {
+  -webkit-animation-name: fadeOut;animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#copy_dialog.fadeIn {
+  -webkit-animation-name: fadeIn;animation-name: fadeIn;
+}

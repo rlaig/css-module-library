@@ -1,0 +1,17 @@
+// icons as background image (OG svg color)
+@each $name, $iconsvg in $icons {
+  .iconBg#{$name} {
+    background-image: $iconsvg;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: transparent !important;
+  }
+}
+// icons as mask image (can be colored using background-color)
+@each $name, $iconsvg in $icons {
+  .icon#{$name} {
+    mask-image: $iconsvg;
+    -webkit-mask-image: $iconsvg;
+  }
+}

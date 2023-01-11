@@ -1,0 +1,414 @@
+// Color pallette source and variables for the design system
+// Figma: https://www.figma.com/file/Xma6Dr01tXzm2O20M2nLvMSH?node-id=0:441
+
+/*---
+title: Colors
+section: Overview
+---
+`colors.module.css`
+
+Color styles can be applied to any element. Use a color directly by adding
+a class in this format:
+
+`color{color-name}` for applying color
+
+`bgColor{color-name}` for applying background color
+
+replace `{color-name}` with any of the color names below
+
+HTML
+```demo:html
+<div class="spaced colorPrimary800">color is Primary800</div>
+<div class="spaced bgColorPrimary800 colorPrimary050">background color is Primary800 and color is Primary050</div>
+```
+```html
+<div class="colorPrimary800">color is Primary800</div>
+<div class="bgColorPrimary800 colorPrimary050">background color is Primary800 and color is Primary050</div>
+```
+*/
+
+/*---
+title:   Primary
+section: Colors
+---
+```example:color
+@color: #FEF0E9 @name: Primary050
+@color: #FACEBC @name: Primary100
+@color: #F7AF91 @name: Primary200
+@color: #F59166 @name: Primary300
+@color: #F37A44 @name: Primary400
+@color: #F16622 @name: Primary500
+@color: #E6601E @name: Primary600
+@color: #D9591A @name: Primary700
+@color: #CB5217 @name: Primary800
+@color: #B14612 @name: Primary900
+```
+*/
+$primary-050: #FEF0E9;
+$primary-100: #FACEBC;
+$primary-200: #F7AF91;
+$primary-300: #F59166;
+$primary-400: #F37A44;
+$primary-500: #F16622;
+$primary-600: #E6601E;
+$primary-700: #D9591A;
+$primary-800: #CB5217;
+$primary-900: #B14612;
+
+/*---
+title:   Secondary
+section: Colors
+---
+```example:color
+@color: #FFF8E1 @name: Secondary050
+@color: #FFECB3 @name: Secondary100
+@color: #FEE082 @name: Secondary200
+@color: #FED54F @name: Secondary300
+@color: #FECA28 @name: Secondary400
+@color: #FEC108 @name: Secondary500
+@color: #FEB300 @name: Secondary600
+@color: #FFA400 @name: Secondary700
+@color: #FE8F00 @name: Secondary800
+@color: #FE6F00 @name: Secondary900
+```
+*/
+$secondary-050: #FFF8E1;
+$secondary-100: #FFECB3;
+$secondary-200: #FEE082;
+$secondary-300: #FED54F;
+$secondary-400: #FECA28;
+$secondary-500: #FEC108;
+$secondary-600: #FEB300;
+$secondary-700: #FFA400;
+$secondary-800: #FE8F00;
+$secondary-900: #FE6F00;
+
+/*---
+title:   Mine Shaft
+section: Colors
+---
+```example:color
+@color: #FDFDFD @name: MineShaft050
+@color: #F8F8F8 @name: MineShaft100
+@color: #F3F3F3 @name: MineShaft200
+@color: #EEEEEE @name: MineShaft300
+@color: #CFCFCF @name: MineShaft400
+@color: #B2B2B2 @name: MineShaft500
+@color: #888888 @name: MineShaft600
+@color: #737373 @name: MineShaft700
+@color: #535353 @name: MineShaft800
+@color: #303030 @name: MineShaft900
+```
+*/
+$mineShaft-050: #FDFDFD;
+$mineShaft-100: #F8F8F8;
+$mineShaft-200: #F3F3F3;
+$mineShaft-300: #EEEEEE;
+$mineShaft-400: #CFCFCF;
+$mineShaft-500: #B2B2B2;
+$mineShaft-600: #888888;
+$mineShaft-700: #737373;
+$mineShaft-800: #535353;
+$mineShaft-900: #303030;
+
+/*---
+title:   Nobel
+section: Colors
+---
+```example:color
+@color: #F9F9F9 @name: Nobel050
+@color: #F1F1F1 @name: Nobel100
+@color: #E8E8E8 @name: Nobel200
+@color: #D8D8D8 @name: Nobel300
+@color: #B2B2B2 @name: Nobel400
+@color: #949494 @name: Nobel500
+@color: #6C6C6C @name: Nobel600
+@color: #585858 @name: Nobel700
+@color: #3A3A3A @name: Nobel800
+@color: #1A1A1A @name: Nobel900
+```
+*/
+$nobel-050:#F9F9F9;
+$nobel-100:#F1F1F1;
+$nobel-200:#E8E8E8;
+$nobel-300:#D8D8D8;
+$nobel-400:#B2B2B2;
+$nobel-500:#949494;
+$nobel-600:#6C6C6C;
+$nobel-700:#585858;
+$nobel-800:#3A3A3A;
+$nobel-900:#1A1A1A;
+
+/*---
+title:   Mountain Medows
+section: Colors
+---
+```example:color
+@color: #EEF9F7 @name: MountainMedows050
+@color: #AAE2D3 @name: MountainMedows100
+@color: #6FD0B8 @name: MountainMedows200
+@color: #19BC9B @name: MountainMedows300
+@color: #00AD86 @name: MountainMedows400
+@color: #009C73 @name: MountainMedows500
+@color: #008F67 @name: MountainMedows600
+@color: #007F58 @name: MountainMedows700
+@color: #006F4A @name: MountainMedows800
+@color: #00522F @name: MountainMedows900
+```
+*/
+$mountainMedows-050: #EEF9F7;
+$mountainMedows-100: #AAE2D3;
+$mountainMedows-200: #6FD0B8;
+$mountainMedows-300: #19BC9B;
+$mountainMedows-400: #00AD86;
+$mountainMedows-500: #009C73;
+$mountainMedows-600: #008F67;
+$mountainMedows-700: #007F58;
+$mountainMedows-800: #006F4A;
+$mountainMedows-900: #00522F;
+
+/*---
+title:   Picton Blue
+section: Colors
+---
+```example:color
+@color: #E2F1FC @name: PictonBlue050
+@color: #B8DCF8 @name: PictonBlue100
+@color: #8AC7F4 @name: PictonBlue200
+@color: #5AB0EF @name: PictonBlue300
+@color: #2FA0ED @name: PictonBlue400
+@color: #0091EA @name: PictonBlue500
+@color: #0083DD @name: PictonBlue600
+@color: #0071CA @name: PictonBlue700
+@color: #0061B9 @name: PictonBlue800
+@color: #00439A @name: PictonBlue900
+```
+*/
+ $pictonBlue-050: #E2F1FC;
+ $pictonBlue-100: #B8DCF8;
+ $pictonBlue-200: #8AC7F4;
+ $pictonBlue-300: #5AB0EF;
+ $pictonBlue-400: #2FA0ED;
+ $pictonBlue-500: #0091EA;
+ $pictonBlue-600: #0083DD;
+ $pictonBlue-700: #0071CA;
+ $pictonBlue-800: #0061B9;
+ $pictonBlue-900: #00439A;
+
+/*---
+title:   Tree Poppy
+section: Colors
+---
+```example:color
+@color: #FEF3E1 @name: TreePoppy050
+@color: #FCE0B4 @name: TreePoppy100
+@color: #FBCB84 @name: TreePoppy200
+@color: #F9B654 @name: TreePoppy300
+@color: #F8A732 @name: TreePoppy400
+@color: #F7981C @name: TreePoppy500
+@color: #F38D1A @name: TreePoppy600
+@color: #EC7D17 @name: TreePoppy700
+@color: #E66E15 @name: TreePoppy800
+@color: #DC5612 @name: TreePoppy900
+```
+*/
+$treePoppy-050: #FEF3E1;
+$treePoppy-100: #FCE0B4;
+$treePoppy-200: #FBCB84;
+$treePoppy-300: #F9B654;
+$treePoppy-400: #F8A732;
+$treePoppy-500: #F7981C;
+$treePoppy-600: #F38D1A;
+$treePoppy-700: #EC7D17;
+$treePoppy-800: #E66E15;
+$treePoppy-900: #DC5612;
+
+/*---
+title:   Valencia
+section: Colors
+---
+```example:color
+@color: #FBEAED @name: Valencia050
+@color: #F6CBCF @name: Valencia100
+@color: #E09797 @name: Valencia200
+@color: #D17170 @name: Valencia300
+@color: #D8534F @name: Valencia400
+@color: #DA4437 @name: Valencia500
+@color: #CC3C36 @name: Valencia600
+@color: #BA3330 @name: Valencia700
+@color: #AD2E2A @name: Valencia800
+@color: #9F231E @name: Valencia900
+```
+*/
+ $valencia-050: #FBEAED;
+ $valencia-100: #F6CBCF;
+ $valencia-200: #E09797;
+ $valencia-300: #D17170;
+ $valencia-400: #D8534F;
+ $valencia-500: #DA4437;
+ $valencia-600: #CC3C36;
+ $valencia-700: #BA3330;
+ $valencia-800: #AD2E2A;
+ $valencia-900: #9F231E;
+
+/*---
+title:   Shadows
+section: Overview
+---
+`colors.module.css`
+
+Manually apply a shadow effect on a container by adding
+class in this format:
+
+`shadow{name}` - replace `{name}` with any of the component's shadow spec below
+
+```example:html
+<div class="demoShadow shadowSwitch">Switch</div>
+<br />
+<div class="demoShadow shadowCard">Card</div>
+<br />
+<div class="demoShadow shadowSheet">Sheet</div>
+<br />
+<div class="demoShadow shadowDrawer">Drawer</div>
+<br />
+<div class="demoShadow shadowDialog">Dialog</div>
+```
+*/
+$shadowSwitch: 0px 2px 6px rgba(0, 0, 0, 0.25);
+$shadowCard: 0px 4px 12px rgba(0, 0, 0, 0.1);
+$shadowSheet: 0px 0px 13px rgba(0, 0, 0, 0.2);
+$shadowDrawer: 0px 0px 13px rgba(0, 0, 0, 0.2);
+$shadowDialog: 0px 2px 10px rgba(0, 0, 0, 0.3);
+
+// Overlays
+$overlayThumbnail: rgba(0, 0, 0, 0.5);
+$overlayDialog: rgba(0, 0, 0, 0.7);
+$overlayImage85: rgba(0, 0, 0, 0.85);
+$overlayImage100: rgba(0, 0, 0, 1);
+
+// =============
+// Map Color List
+$primaryList: (
+  "Primary050": $primary-050,
+  "Primary100": $primary-100,
+  "Primary200": $primary-200,
+  "Primary300": $primary-300,
+  "Primary400": $primary-400,
+  "Primary500": $primary-500,
+  "Primary600": $primary-600,
+  "Primary700": $primary-700,
+  "Primary800": $primary-800,
+  "Primary900": $primary-900
+);
+$secondaryList: (
+  "Secondary050": $secondary-050,
+  "Secondary100": $secondary-100,
+  "Secondary200": $secondary-200,
+  "Secondary300": $secondary-300,
+  "Secondary400": $secondary-400,
+  "Secondary500": $secondary-500,
+  "Secondary600": $secondary-600,
+  "Secondary700": $secondary-700,
+  "Secondary800": $secondary-800,
+  "Secondary900": $secondary-900
+);
+$mineShaft: (
+  "Mineshaft050": $mineShaft-050,
+  "Mineshaft100": $mineShaft-100,
+  "Mineshaft200": $mineShaft-200,
+  "Mineshaft300": $mineShaft-300,
+  "Mineshaft400": $mineShaft-400,
+  "Mineshaft500": $mineShaft-500,
+  "Mineshaft600": $mineShaft-600,
+  "Mineshaft700": $mineShaft-700,
+  "Mineshaft800": $mineShaft-800,
+  "Mineshaft900": $mineShaft-900
+);
+$nobel: (
+  "Nobel050": $nobel-050,
+  "Nobel100": $nobel-100,
+  "Nobel200": $nobel-200,
+  "Nobel300": $nobel-300,
+  "Nobel400": $nobel-400,
+  "Nobel500": $nobel-500,
+  "Nobel600": $nobel-600,
+  "Nobel700": $nobel-700,
+  "Nobel800": $nobel-800,
+  "Nobel900": $nobel-900
+);
+$mountainMedows: (
+  "Mountainmedows050": $mountainMedows-050,
+  "Mountainmedows100": $mountainMedows-100,
+  "Mountainmedows200": $mountainMedows-200,
+  "Mountainmedows300": $mountainMedows-300,
+  "Mountainmedows400": $mountainMedows-400,
+  "Mountainmedows500": $mountainMedows-500,
+  "Mountainmedows600": $mountainMedows-600,
+  "Mountainmedows700": $mountainMedows-700,
+  "Mountainmedows800": $mountainMedows-800,
+  "Mountainmedows900": $mountainMedows-900
+);
+$pictonBlue: (
+  "Pictonblue050": $pictonBlue-050,
+  "Pictonblue100": $pictonBlue-100,
+  "Pictonblue200": $pictonBlue-200,
+  "Pictonblue300": $pictonBlue-300,
+  "Pictonblue400": $pictonBlue-400,
+  "Pictonblue500": $pictonBlue-500,
+  "Pictonblue600": $pictonBlue-600,
+  "Pictonblue700": $pictonBlue-700,
+  "Pictonblue800": $pictonBlue-800,
+  "Pictonblue900": $pictonBlue-900
+);
+$treePoppy: (
+  "Treepoppy050": $treePoppy-050,
+  "Treepoppy100": $treePoppy-100,
+  "Treepoppy200": $treePoppy-200,
+  "Treepoppy300": $treePoppy-300,
+  "Treepoppy400": $treePoppy-400,
+  "Treepoppy500": $treePoppy-500,
+  "Treepoppy600": $treePoppy-600,
+  "Treepoppy700": $treePoppy-700,
+  "Treepoppy800": $treePoppy-800,
+  "Treepoppy900": $treePoppy-900
+);
+$valencia: (
+  "Valencia050": $valencia-050,
+  "Valencia100": $valencia-100,
+  "Valencia200": $valencia-200,
+  "Valencia300": $valencia-300,
+  "Valencia400": $valencia-400,
+  "Valencia500": $valencia-500,
+  "Valencia600": $valencia-600,
+  "Valencia700": $valencia-700,
+  "Valencia800": $valencia-800,
+  "Valencia900": $valencia-900
+);
+
+$white: #FFFFFF;
+$black: #000000;
+
+$common: (
+  "White": $white,
+  "Black": $black,
+);
+
+// Shadows
+$shadows: (
+  "Switch": $shadowSwitch,
+  "Card": $shadowCard,
+  "Sheet": $shadowSheet,
+  "Drawer": $shadowDrawer,
+  "Dialog": $shadowDialog
+);
+
+// Overlays
+$overlays: (
+  "Thumbnail": $overlayThumbnail,
+  "Dialog": $overlayDialog,
+  "Image85": $overlayImage85,
+  "Image100": $overlayImage100,
+);
+
+// colors collection
+$colors: map-collect($primaryList, $secondaryList, $mineShaft, $nobel, $mountainMedows, $pictonBlue, $treePoppy, $valencia, $common);

@@ -1,0 +1,46 @@
+// generate device font family and sizes
+@each $device, $fontFamily in $fontList {
+  $sizeSet: $fontWebSizes;
+  $headingsSet: $fontWebHeadings;
+  @if $device == 'Ios' {
+    $sizeSet: $fontIosSizes;
+    $headingsSet: $fontIosHeadings;
+  } @else if  $device == 'Android' {
+    $sizeSet: $fontAndroidSizes;
+    $headingsSet: $fontAndroidHeadings;
+  }
+
+  .font#{$device} {
+    font-family: $fontFamily;
+    @each $sizeName, $sizeSpec in $sizeSet {
+      .size#{$sizeName} {
+        font-size: nth($sizeSpec, 1);
+        line-height: nth($sizeSpec, 2);
+        letter-spacing: nth($sizeSpec, 3);
+      }
+    }
+
+    @each $sizeName, $sizeSpec in $headingsSet {
+      #{$sizeName} {
+        font-size: nth($sizeSpec, 1);
+        line-height: nth($sizeSpec, 2);
+        letter-spacing: nth($sizeSpec, 3);
+      }
+    }
+  }
+}
+
+// generate font weight classes
+@each $name, $value in $fontWeights {
+  .weight#{$name} {
+    font-weight: $value;
+  }
+}
+
+// define styles
+.styleStrikethrough {
+  text-decoration-line: line-through;
+}
+.styleItalic {
+  font-style: italic;
+}

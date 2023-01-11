@@ -1,0 +1,1377 @@
+/*---
+title: Icons
+section: Overview
+---
+`icons.module.css`
+
+Icons can be directly added as a `background-image` (non-colored / original color version) or as
+a mask-image which can be colored using `background-color`
+
+as background-image - `iconBg{icon-name}`
+
+as mask image - `icon{icon-name}`
+
+replace `{icon-name}` with any of the icon names below
+
+#### Colored Icon
+```demo:html
+  <div class="demoIcon iconRewardsFilled bgColorPrimary800" title="RewardsFilled"></div>
+  <div class="demoIcon iconApple bgColorPictonBlue900" title="Apple"></div>
+  <div class="demoIcon iconConversationFilled bgColorValencia900" title="ConversationFilled"></div>
+  <div class="demoIcon iconVisa bgColorMountainMedows900" title="Visa"></div>
+```
+```html
+  <div class="iconRewardsFilled bgColorPrimary800"></div>
+  <div class="iconApple bgColorPictonBlue900"></div>
+  <div class="iconConversationFilled bgColorValencia900"></div>
+  <div class="iconVisa bgColorMountainMedows900"></div>
+```
+Note: some icons mostly logos can be colored but will appear solid see sample Visa logo
+
+#### Icons List
+*/
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">A</div>
+  <div class="demoIcon iconBgAdd" title="Add"></div>
+  <div class="demoIcon iconBgAddCircle" title="AddCircle"></div>
+  <div class="demoIcon iconBgAddCircleFilled" title="AddCircleFilled"></div>
+  <div class="demoIcon iconBgAddCircleFilledLight" title="AddCircleFilledLight"></div>
+  <div class="demoIcon iconBgAddCircleLight" title="AddCircleLight"></div>
+  <div class="demoIcon iconBgAddLight" title="AddLight"></div>
+  <div class="demoIcon iconBgAddLocation" title="AddLocation"></div>
+  <div class="demoIcon iconBgAddLocation2" title="AddLocation2"></div>
+  <div class="demoIcon iconBgAddLocationFilled" title="AddLocationFilled"></div>
+  <div class="demoIcon iconBgAddLocationFilledLight" title="AddLocationFilledLight"></div>
+  <div class="demoIcon iconBgAddLocationLight" title="AddLocationLight"></div>
+  <div class="demoIcon iconBgAddressbook" title="Addressbook"></div>
+  <div class="demoIcon iconBgAddressbookLight" title="AddressbookLight"></div>
+  <div class="demoIcon iconBgAlipay" title="Alipay"></div>
+  <div class="demoIcon iconBgAmex" title="Amex"></div>
+  <div class="demoIcon iconBgApple" title="Apple"></div>
+  <div class="demoIcon iconBgArchive" title="Archive"></div>
+  <div class="demoIcon iconBgArchiveLight" title="ArchiveLight"></div>
+  <div class="demoIcon iconBgAttachment" title="Attachment"></div>
+  <div class="demoIcon iconBgAttachmentLight" title="AttachmentLight"></div>
+  <div class="clear">B</div>
+  <div class="demoIcon iconBgBangkokBank" title="BangkokBank"></div>
+  <div class="demoIcon iconBgBank" title="Bank"></div>
+  <div class="demoIcon iconBgBellLight" title="BellLight"></div>
+  <div class="demoIcon iconBgBellWithBadge" title="BellWithBadge"></div>
+  <div class="demoIcon iconBgBellWithBadgeLight" title="BellWithBadgeLight"></div>
+  <div class="demoIcon iconBgBHIMUPI" title="BHIMUPI"></div>
+  <div class="demoIcon iconBgBin" title="Bin"></div>
+  <div class="demoIcon iconBgBinLight" title="BinLight"></div>
+  <div class="demoIcon iconBgBoletoBancario" title="BoletoBancario"></div>
+  <div class="demoIcon iconBgBookmark" title="Bookmark"></div>
+  <div class="demoIcon iconBgBookmarkAdd" title="BookmarkAdd"></div>
+  <div class="demoIcon iconBgBookmarkAddFilled" title="BookmarkAddFilled"></div>
+  <div class="demoIcon iconBgBookmarkAddFilledLight" title="BookmarkAddFilledLight"></div>
+  <div class="demoIcon iconBgBookmarkAddLight" title="BookmarkAddLight"></div>
+  <div class="demoIcon iconBgBookmarkFilled" title="BookmarkFilled"></div>
+  <div class="demoIcon iconBgBookmarkFilledLight" title="BookmarkFilledLight"></div>
+  <div class="demoIcon iconBgBookmarkLight" title="BookmarkLight"></div>
+  <div class="demoIcon iconBgBoxes" title="Boxes"></div>
+  <div class="demoIcon iconBgBoxesLight" title="BoxesLight"></div>
+  <div class="demoIcon iconBgBubblePin" title="BubblePin"></div>
+  <div class="demoIcon iconBgBubblePinFilled" title="BubblePinFilled"></div>
+  <div class="demoIcon iconBgBubblePinLight" title="BubblePinLight"></div>
+  <div class="demoIcon iconBgBuilding" title="Building"></div>
+  <div class="demoIcon iconBgBuildingLight" title="BuildingLight"></div>
+  <div class="demoIcon iconBgBulb" title="Bulb"></div>
+  <div class="demoIcon iconBgBulbFilled" title="BulbFilled"></div>
+  <div class="demoIcon iconBgBulbFilledLight" title="BulbFilledLight"></div>
+  <div class="demoIcon iconBgBulbLight" title="BulbLight"></div>
+  <div class="demoIcon iconBgBusiness" title="Business"></div>
+  <div class="demoIcon iconBgBusinessFilled" title="BusinessFilled"></div>
+  <div class="demoIcon iconBgBusinessFilledLight" title="BusinessFilledLight"></div>
+  <div class="demoIcon iconBgBusinessLight" title="BusinessLight"></div>
+  ```
+*/
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">C</div>
+  <div class="demoIcon iconBgCalendar" title="Calendar"></div>
+  <div class="demoIcon iconBgCalendarLight" title="CalendarLight"></div>
+  <div class="demoIcon iconBgCamera" title="Camera"></div>
+  <div class="demoIcon iconBgCameraLight" title="CameraLight"></div>
+  <div class="demoIcon iconBgCash" title="Cash"></div>
+  <div class="demoIcon iconBgCashLight" title="CashLight"></div>
+  <div class="demoIcon iconBgCaution" title="Caution"></div>
+  <div class="demoIcon iconBgCautionLight" title="CautionLight"></div>
+  <div class="demoIcon iconBgChange" title="Change"></div>
+  <div class="demoIcon iconBgChangeLight" title="ChangeLight"></div>
+  <div class="demoIcon iconBgChart" title="Chart"></div>
+  <div class="demoIcon iconBgChartLight" title="ChartLight"></div>
+  <div class="demoIcon iconBgCheckbox" title="Checkbox"></div>
+  <div class="demoIcon iconBgCheckboxChecked" title="CheckboxChecked"></div>
+  <div class="demoIcon iconBgCheckboxLight" title="CheckboxLight"></div>
+  <div class="demoIcon iconBgChest" title="Chest"></div>
+  <div class="demoIcon iconBgChestLight" title="ChestLight"></div>
+  <div class="demoIcon iconBgClose" title="Close"></div>
+  <div class="demoIcon iconBgClose2" title="Close2"></div>
+  <div class="demoIcon iconBgClose2Light" title="Close2Light"></div>
+  <div class="demoIcon iconBgCloseLight" title="CloseLight"></div>
+  <div class="demoIcon iconBgCloudUpload" title="CloudUpload"></div>
+  <div class="demoIcon iconBgCloudUploadFilled" title="CloudUploadFilled"></div>
+  <div class="demoIcon iconBgCloudUploadFilledLight" title="CloudUploadFilledLight"></div>
+  <div class="demoIcon iconBgCloudUploadLight" title="CloudUploadLight"></div>
+  <div class="demoIcon iconBgCompany" title="Company"></div>
+  <div class="demoIcon iconBgCompanyLight" title="CompanyLight"></div>
+  <div class="demoIcon iconBgCompass" title="Compass"></div>
+  <div class="demoIcon iconBgCompassLight" title="CompassLight"></div>
+  <div class="demoIcon iconBgContactbook" title="Contactbook"></div>
+  <div class="demoIcon iconBgContactbookLight" title="ContactbookLight"></div>
+  <div class="demoIcon iconBgConversation" title="Conversation"></div>
+  <div class="demoIcon iconBgConversationFilled" title="ConversationFilled"></div>
+  <div class="demoIcon iconBgConversationLight" title="ConversationLight"></div>
+  <div class="demoIcon iconBgCopy" title="Copy"></div>
+  <div class="demoIcon iconBgCopyLight" title="CopyLight"></div>
+  <div class="demoIcon iconBgCreditCard" title="CreditCard"></div>
+  <div class="demoIcon iconBgCreditCardAdd" title="CreditCardAdd"></div>
+  <div class="demoIcon iconBgCreditCardAddLight" title="CreditCardAddLight"></div>
+  <div class="demoIcon iconBgCreditCardLight" title="CreditCardLight"></div>
+  <div class="demoIcon iconBgCS" title="CS"></div>
+  <div class="demoIcon iconBgCSLight" title="CSLight"></div>
+  <div class="demoIcon iconBgCVV" title="CVV"></div>
+  <div class="clear">D</div>
+  <div class="demoIcon iconBgDashboard" title="Dashboard"></div>
+  <div class="demoIcon iconBgDashboardLight" title="DashboardLight"></div>
+  <div class="demoIcon iconBgDelete" title="Delete"></div>
+  <div class="demoIcon iconBgDeleteFilled" title="DeleteFilled"></div>
+  <div class="demoIcon iconBgDeleteFilledLight" title="DeleteFilledLight"></div>
+  <div class="demoIcon iconBgDeleteLight" title="DeleteLight"></div>
+  <div class="demoIcon iconBgDeleteStop" title="DeleteStop"></div>
+  <div class="demoIcon iconBgDeletestopFilled" title="DeletestopFilled"></div>
+  <div class="demoIcon iconBgDeleteStopLight" title="DeleteStopLight"></div>
+  <div class="demoIcon iconBgDetails" title="Details"></div>
+  <div class="demoIcon iconBgDetailsLight" title="DetailsLight"></div>
+  <div class="demoIcon iconBgDiscount" title="Discount"></div>
+  <div class="demoIcon iconBgDiscountLight" title="DiscountLight"></div>
+  <div class="demoIcon iconBgDiscountPolygon" title="DiscountPolygon"></div>
+  <div class="demoIcon iconBgDiscountPolygonFilled" title="DiscountPolygonFilled"></div>
+  <div class="demoIcon iconBgDiscountPolygonFilledLight" title="DiscountPolygonFilledLight"></div>
+  <div class="demoIcon iconBgDiscountPolygonLight" title="DiscountPolygonLight"></div>
+  <div class="demoIcon iconBgDown" title="Down"></div>
+  <div class="demoIcon iconBgDownArrow" title="DownArrow"></div>
+  <div class="demoIcon iconBgDownArrowLight" title="DownArrowLight"></div>
+  <div class="demoIcon iconBgDownTriangle" title="DownTriangle"></div>
+  <div class="demoIcon iconBgDriverKitLalamove" title="DriverKitLalamove"></div>
+  <div class="demoIcon iconBgDriverKitLalamoveLight" title="DriverKitLalamoveLight"></div>
+  <div class="demoIcon iconBgDriverKitUncleD" title="DriverKitUncleD"></div>
+  <div class="demoIcon iconBgDriverKitUncleDLight" title="DriverKitUncleDLight"></div>
+  <div class="demoIcon iconBgDrivers" title="Drivers"></div>
+  <div class="demoIcon iconBgDriversLight" title="DriversLight"></div>
+  ```
+*/
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">E</div>
+  <div class="demoIcon iconBgEdit" title="Edit"></div>
+  <div class="demoIcon iconBgEdit2" title="Edit2"></div>
+  <div class="demoIcon iconBgEdit2Light" title="Edit2Light"></div>
+  <div class="demoIcon iconBgEditLight" title="EditLight"></div>
+  <div class="demoIcon iconBgElo" title="Elo"></div>
+  <div class="demoIcon iconBgEmail" title="Email"></div>
+  <div class="demoIcon iconBgEmailLight" title="EmailLight"></div>
+  <div class="clear">F</div>
+  <div class="demoIcon iconBgFacebook" title="Facebook"></div>
+  <div class="demoIcon iconBgFacebookColored" title="FacebookColored"></div>
+  <div class="demoIcon iconBgFall" title="Fall"></div>
+  <div class="demoIcon iconBgFallLight" title="FallLight"></div>
+  <div class="demoIcon iconBgFAQ" title="FAQ"></div>
+  <div class="demoIcon iconBgFAQLight" title="FAQLight"></div>
+  <div class="demoIcon iconBgFavorite" title="Favorite"></div>
+  <div class="demoIcon iconBgFavoriteFilled" title="FavoriteFilled"></div>
+  <div class="demoIcon iconBgFavoriteLight" title="FavoriteLight"></div>
+  <div class="demoIcon iconBgFilter" title="Filter"></div>
+  <div class="demoIcon iconBgFilterLight" title="FilterLight"></div>
+  <div class="demoIcon iconBgFilterWithBadge" title="FilterWithBadge"></div>
+  <div class="demoIcon iconBgFilterWithBadgeLight" title="FilterWithBadgeLight"></div>
+  <div class="clear">G</div>
+  <div class="demoIcon iconBgGallery" title="Gallery"></div>
+  <div class="demoIcon iconBgGalleryLight" title="GalleryLight"></div>
+  <div class="demoIcon iconBgGCash" title="GCash"></div>
+  <div class="demoIcon iconBgGift" title="Gift"></div>
+  <div class="demoIcon iconBgGiftFilled" title="GiftFilled"></div>
+  <div class="demoIcon iconBgGiftFilledLight" title="GiftFilledLight"></div>
+  <div class="demoIcon iconBgGiftLight" title="GiftLight"></div>
+  <div class="demoIcon iconBgGlobal" title="Global"></div>
+  <div class="demoIcon iconBgGlobalLight" title="GlobalLight"></div>
+  <div class="demoIcon iconBgGoogle" title="Google"></div>
+  <div class="demoIcon iconBgGoogleColored" title="GoogleColored"></div>
+  <div class="clear">H</div>
+  <div class="demoIcon iconBgHandshake" title="Handshake"></div>
+  <div class="demoIcon iconBgHandshakeLight" title="HandshakeLight"></div>
+  <div class="demoIcon iconBgHelp" title="Help"></div>
+  <div class="demoIcon iconBgHelpLight" title="HelpLight"></div>
+  <div class="demoIcon iconBgHiper" title="Hiper"></div>
+  <div class="demoIcon iconBgHipercard" title="Hipercard"></div>
+  <div class="demoIcon iconBgHistory" title="History"></div>
+  <div class="demoIcon iconBgHistoryLight" title="HistoryLight"></div>
+  <div class="demoIcon iconBgHome" title="Home"></div>
+  <div class="demoIcon iconBgHomeLight" title="HomeLight"></div>
+  <div class="clear">I</div>
+  <div class="demoIcon iconBgInfo" title="Info"></div>
+  <div class="demoIcon iconBgInfoFilled" title="InfoFilled"></div>
+  <div class="demoIcon iconBgInfoLight" title="InfoLight"></div>
+  <div class="demoIcon iconBgInvisibleFilled" title="InvisibleFilled"></div>
+  <div class="clear">J</div>
+  <div class="demoIcon iconBgJCB" title="JCB"></div>
+  ```
+*/
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">K</div>
+  <div class="demoIcon iconBgKasikornBank" title="KasikornBank"></div>
+  <div class="demoIcon iconBgKey" title="Key"></div>
+  <div class="demoIcon iconBgKeyLight" title="KeyLight"></div>
+  <div class="demoIcon iconBgKrungsriBank" title="KrungsriBank"></div>
+  <div class="demoIcon iconBgKrungthaiBank" title="KrungthaiBank"></div>
+  <div class="clear">L</div>
+  <div class="demoIcon iconBgLalamove" title="Lalamove"></div>
+  <div class="demoIcon iconBgLalamoveColored" title="LalamoveColored"></div>
+  <div class="demoIcon iconBgLanguage" title="Language"></div>
+  <div class="demoIcon iconBgLanguageLight" title="LanguageLight"></div>
+  <div class="demoIcon iconBgLeft" title="Left"></div>
+  <div class="demoIcon iconBgLeftArrow" title="LeftArrow"></div>
+  <div class="demoIcon iconBgLeftArrowLight" title="LeftArrowLight"></div>
+  <div class="demoIcon iconBgLeftLight" title="LeftLight"></div>
+  <div class="demoIcon iconBgLeftTriangle" title="LeftTriangle"></div>
+  <div class="demoIcon iconBgLocationPin" title="LocationPin"></div>
+  <div class="demoIcon iconBgLocationPinLight" title="LocationPinLight"></div>
+  <div class="demoIcon iconBgLocator" title="Locator"></div>
+  <div class="demoIcon iconBgLock" title="Lock"></div>
+  <div class="demoIcon iconBgLockLight" title="LockLight"></div>
+  <div class="demoIcon iconBgLogin" title="Login"></div>
+  <div class="demoIcon iconBgLoginLight" title="LoginLight"></div>
+  <div class="clear">M</div>
+  <div class="demoIcon iconBgMaestrocard" title="Maestrocard"></div>
+  <div class="demoIcon iconBgMandiriClickpay" title="MandiriClickpay"></div>
+  <div class="demoIcon iconBgMap" title="Map"></div>
+  <div class="demoIcon iconBgMastercard" title="Mastercard"></div>
+  <div class="demoIcon iconBgMembership" title="Membership"></div>
+  <div class="demoIcon iconBgMembership2" title="Membership2"></div>
+  <div class="demoIcon iconBgMembership2Light" title="Membership2Light"></div>
+  <div class="demoIcon iconBgMembership3" title="Membership3"></div>
+  <div class="demoIcon iconBgMembership3Light" title="Membership3Light"></div>
+  <div class="demoIcon iconBgMembershipLight" title="MembershipLight"></div>
+  <div class="demoIcon iconBgMenu" title="Menu"></div>
+  <div class="demoIcon iconBgMenuLight" title="MenuLight"></div>
+  <div class="demoIcon iconBgMenuWithBadge" title="MenuWithBadge"></div>
+  <div class="demoIcon iconBgMenuWithBadgeLight" title="MenuWithBadgeLight"></div>
+  <div class="demoIcon iconBgMessageCircle" title="MessageCircle"></div>
+  <div class="demoIcon iconBgMessageCircleLight" title="MessageCircleLight"></div>
+  <div class="demoIcon iconBgMessageCircleWithBadge" title="MessageCircleWithBadge"></div>
+  <div class="demoIcon iconBgMessageCircleWithBadgeLight" title="MessageCircleWithBadgeLight"></div>
+  <div class="demoIcon iconBgMessageExclamationCircle" title="MessageExclamationCircle"></div>
+  <div class="demoIcon iconBgMessageExclamationCircleLight" title="MessageExclamationCircleLight"></div>
+  <div class="demoIcon iconBgMessageExclamationCircleWithBadge" title="MessageExclamationCircleWithBadge"></div>
+  <div class="demoIcon iconBgMessageExclamationCircleWithBadgeLight" title="MessageExclamationCircleWithBadgeLight"></div>
+  <div class="demoIcon iconBgMessageSquare" title="MessageSquare"></div>
+  <div class="demoIcon iconBgMessageSquareLight" title="MessageSquareLight"></div>
+  <div class="demoIcon iconBgMessageSquareWithBadge" title="MessageSquareWithBadge"></div>
+  <div class="demoIcon iconBgMessageSquareWithBadgeLight" title="MessageSquareWithBadgeLight"></div>
+  <div class="demoIcon iconBgMissions" title="Missions"></div>
+  <div class="demoIcon iconBgMidstop" title="Midstop"></div>
+  <div class="demoIcon iconBgMissionsLight" title="MissionsLight"></div>
+  <div class="demoIcon iconBgMomo" title="Momo"></div>
+  ```
+*/
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">N</div>
+  <div class="demoIcon iconBgNavigation" title="Navigation"></div>
+  <div class="demoIcon iconBgNavigationFilled" title="NavigationFilled"></div>
+  <div class="demoIcon iconBgNavigationLight" title="NavigationLight"></div>
+  <div class="demoIcon iconBgNotifications" title="Notifications"></div>
+  <div class="demoIcon iconBgNotificationsLight" title="NotificationsLight"></div>
+  <div class="demoIcon iconBgNotificationsWithBadge" title="NotificationsWithBadge"></div>
+  <div class="demoIcon iconBgNotificationsWithBadgeLight" title="NotificationsWithBadgeLight"></div>
+  <div class="clear">O</div>
+  <div class="demoIcon iconBgOnlinePaymentDesktop" title="OnlinePaymentDesktop"></div>
+  <div class="demoIcon iconBgOnlinePaymentDesktopLight" title="OnlinePaymentDesktopLight"></div>
+  <div class="demoIcon iconBgOnlinePaymentPhone" title="OnlinePaymentPhone"></div>
+  <div class="demoIcon iconBgOnlinePaymentPhoneLight" title="OnlinePaymentPhoneLight"></div>
+  <div class="demoIcon iconBgOnOff" title="OnOff"></div>
+  <div class="demoIcon iconBgOnOffLight" title="OnOffLight"></div>
+  <div class="demoIcon iconBgOptionsHorizontal" title="OptionsHorizontal"></div>
+  <div class="demoIcon iconBgOptionsVertical" title="OptionsVertical"></div>
+  <div class="demoIcon iconBgOrder" title="Order"></div>
+  <div class="demoIcon iconBgOrderLight" title="OrderLight"></div>
+  <div class="demoIcon iconBgOvercharge" title="Overcharge"></div>
+  <div class="demoIcon iconBgOverchargeLight" title="OverchargeLight"></div>
+  <div class="clear">P</div>
+  <div class="demoIcon iconBgParcel" title="Parcel"></div>
+  <div class="demoIcon iconBgParcelLight" title="ParcelLight"></div>
+  <div class="demoIcon iconBgPath" title="Path"></div>
+  <div class="demoIcon iconBgPathLight" title="PathLight"></div>
+  <div class="demoIcon iconBgPayMe" title="PayMe"></div>
+  <div class="demoIcon iconBgPermataBank" title="PermataBank"></div>
+  <div class="demoIcon iconBgPersonal" title="Personal"></div>
+  <div class="demoIcon iconBgPersonalCircle" title="PersonalCircle"></div>
+  <div class="demoIcon iconBgPersonalCircleFilled" title="PersonalCircleFilled"></div>
+  <div class="demoIcon iconBgPersonalCircleFilledLight" title="PersonalCircleFilledLight"></div>
+  <div class="demoIcon iconBgPersonalCircleLight" title="PersonalCircleLight"></div>
+  <div class="demoIcon iconBgPersonalFilled" title="PersonalFilled"></div>
+  <div class="demoIcon iconBgPersonalFilledLight" title="PersonalFilledLight"></div>
+  <div class="demoIcon iconBgPersonalLight" title="PersonalLight"></div>
+  <div class="demoIcon iconBgPickup" title="Pickup"></div>
+  <div class="demoIcon iconBgPin" title="Pin"></div>
+  <div class="demoIcon iconBgPinFilled" title="PinFilled"></div>
+  <div class="demoIcon iconBgPinLight" title="PinLight"></div>
+  <div class="demoIcon iconBgPODFailed" title="PODFailed"></div>
+  <div class="demoIcon iconBgPODSuccess" title="PODSuccess"></div>
+  <div class="demoIcon iconBgPricing" title="Pricing"></div>
+  <div class="demoIcon iconBgPricingLight" title="PricingLight"></div>
+  <div class="demoIcon iconBgPromoCode" title="PromoCode"></div>
+  <div class="demoIcon iconBgPromoCodeAdd" title="PromoCodeAdd"></div>
+  <div class="demoIcon iconBgPromoCodeAddLight" title="PromoCodeAddLight"></div>
+  <div class="demoIcon iconBgPromoCodeFilled" title="PromoCodeFilled"></div>
+  <div class="demoIcon iconBgPromoCodeLight" title="PromoCodeLight"></div>
+  ```
+*/
+
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">R</div>
+  <div class="demoIcon iconBgRadio" title="Radio"></div>
+  <div class="demoIcon iconBgRadioLight" title="RadioLight"></div>
+  <div class="demoIcon iconBgRadioSelected" title="RadioSelected"></div>
+  <div class="demoIcon iconBgRadioSelectedFilled" title="RadioSelectedFilled"></div>
+  <div class="demoIcon iconBgRadioSelectedLight" title="RadioSelectedLight"></div>
+  <div class="demoIcon iconBgRates" title="Rates"></div>
+  <div class="demoIcon iconBgRatesLight" title="RatesLight"></div>
+  <div class="demoIcon iconBgReceipt" title="Receipt"></div>
+  <div class="demoIcon iconBgReceiptLight" title="ReceiptLight"></div>
+  <div class="demoIcon iconBgReceive" title="Receive"></div>
+  <div class="demoIcon iconBgReceiveLight" title="ReceiveLight"></div>
+  <div class="demoIcon iconBgRefreshHorizontal" title="RefreshHorizontal"></div>
+  <div class="demoIcon iconBgRefreshHorizontalLight" title="RefreshHorizontalLight"></div>
+  <div class="demoIcon iconBgRefreshVertical" title="RefreshVertical"></div>
+  <div class="demoIcon iconBgRefreshVerticalLight" title="RefreshVerticalLight"></div>
+  <div class="demoIcon iconBgRemarks" title="Remarks"></div>
+  <div class="demoIcon iconBgRemarksLight" title="RemarksLight"></div>
+  <div class="demoIcon iconBgRemarksWithBadge" title="RemarksWithBadge"></div>
+  <div class="demoIcon iconBgRemarksWithBadgeLight" title="RemarksWithBadgeLight"></div>
+  <div class="demoIcon iconBgRemove" title="Remove"></div>
+  <div class="demoIcon iconBgRemoveLight" title="RemoveLight"></div>
+  <div class="demoIcon iconBgReroute" title="Reroute"></div>
+  <div class="demoIcon iconBgRerouteLight" title="RerouteLight"></div>
+  <div class="demoIcon iconBgRewards" title="Rewards"></div>
+  <div class="demoIcon iconBgRewards2" title="Rewards2"></div>
+  <div class="demoIcon iconBgRewards2Light" title="Rewards2Light"></div>
+  <div class="demoIcon iconBgRewardsFilled" title="RewardsFilled"></div>
+  <div class="demoIcon iconBgRewardsLight" title="RewardsLight"></div>
+  <div class="demoIcon iconBgRight" title="Right"></div>
+  <div class="demoIcon iconBgRightArrow" title="RightArrow"></div>
+  <div class="demoIcon iconBgRightArrowLight" title="RightArrowLight"></div>
+  <div class="demoIcon iconBgRightLight" title="RightLight"></div>
+  <div class="demoIcon iconBgRightTriangle" title="RightTriangle"></div>
+  <div class="demoIcon iconBgRise" title="Rise"></div>
+  <div class="demoIcon iconBgRiseLight" title="RiseLight"></div>
+  <div class="clear">S</div>
+  <div class="demoIcon iconBgSearch" title="Search"></div>
+  <div class="demoIcon iconBgSearchLight" title="SearchLight"></div>
+  <div class="demoIcon iconBgSend" title="Send"></div>
+  <div class="demoIcon iconBgSendLight" title="SendLight"></div>
+  <div class="demoIcon iconBgSettings" title="Settings"></div>
+  <div class="demoIcon iconBgSettingsLight" title="SettingsLight"></div>
+  <div class="demoIcon iconBgSettingsWithBadge" title="SettingsWithBadge"></div>
+  <div class="demoIcon iconBgSettingsWithBadgeLight" title="SettingsWithBadgeLight"></div>
+  <div class="demoIcon iconBgShare" title="Share"></div>
+  <div class="demoIcon iconBgShare2" title="Share2"></div>
+  <div class="demoIcon iconBgShare2Light" title="Share2Light"></div>
+  <div class="demoIcon iconBgShareLight" title="ShareLight"></div>
+  <div class="demoIcon iconBgSiamCommercialBank" title="SiamCommercialBank"></div>
+  <div class="demoIcon iconBgSignature" title="Signature"></div>
+  <div class="demoIcon iconBgSignatureLight" title="SignatureLight"></div>
+  <div class="demoIcon iconBgSound" title="Sound"></div>
+  <div class="demoIcon iconBgSoundLight" title="SoundLight"></div>
+  <div class="demoIcon iconBgSoundMuted" title="SoundMuted"></div>
+  <div class="demoIcon iconBgSoundMutedLight" title="SoundMutedLight"></div>
+  <div class="demoIcon iconBgSpeaker" title="Speaker"></div>
+  <div class="demoIcon iconBgSpeakerLight" title="SpeakerLight"></div>
+  <div class="demoIcon iconBgStar" title="Star"></div>
+  <div class="demoIcon iconBgStarFilled" title="StarFilled"></div>
+  <div class="demoIcon iconBgStarLight" title="StarLight"></div>
+  <div class="demoIcon iconBgStickerLalamove" title="StickerLalamove"></div>
+  <div class="demoIcon iconBgStickerLalamoveLight" title="StickerLalamoveLight"></div>
+  <div class="demoIcon iconBgStickerUncleD" title="StickerUncleD"></div>
+  <div class="demoIcon iconBgStickerUncleDLight" title="StickerUncleDLight"></div>
+  <div class="demoIcon iconBgStop" title="Stop"></div>
+  <div class="demoIcon iconBgStopLight" title="StopLight"></div>
+  <div class="demoIcon iconBgSubtractFilledLight" title="SubtractFilledLight"></div>
+  ```
+*/
+
+
+/*---
+section: Icons
+---
+  ```demo:html
+  <div class="clear">T</div>
+  <div class="demoIcon iconBgTaxInvoice" title="TaxInvoice"></div>
+  <div class="demoIcon iconBgTaxInvoiceLight" title="TaxInvoiceLight"></div>
+  <div class="demoIcon iconBgTel" title="Tel"></div>
+  <div class="demoIcon iconBgTelLight" title="TelLight"></div>
+  <div class="demoIcon iconBgTerms" title="Terms"></div>
+  <div class="demoIcon iconBgTermsLight" title="TermsLight"></div>
+  <div class="demoIcon iconBgTescoLotus" title="TescoLotus"></div>
+  <div class="demoIcon iconBgTick" title="Tick"></div>
+  <div class="demoIcon iconBgTickCircle" title="TickCircle"></div>
+  <div class="demoIcon iconBgTickCircleFilled" title="TickCircleFilled"></div>
+  <div class="demoIcon iconBgTickCircleFilledLight" title="TickCircleFilledLight"></div>
+  <div class="demoIcon iconBgTickCircleLight" title="TickCircleLight"></div>
+  <div class="demoIcon iconBgTickLight" title="TickLight"></div>
+  <div class="demoIcon iconBgTimer" title="Timer"></div>
+  <div class="demoIcon iconBgTimer2" title="Timer2"></div>
+  <div class="demoIcon iconBgTimer2Light" title="Timer2Light"></div>
+  <div class="demoIcon iconBgTimer3" title="Timer3"></div>
+  <div class="demoIcon iconBgTimer3Light" title="Timer3Light"></div>
+  <div class="demoIcon iconBgTimerLight" title="TimerLight"></div>
+  <div class="demoIcon iconBgToolkit" title="Toolkit"></div>
+  <div class="demoIcon iconBgToolkitLight" title="ToolkitLight"></div>
+  <div class="demoIcon iconBgToTop" title="ToTop"></div>
+  <div class="demoIcon iconBgToTopLight" title="ToTopLight"></div>
+  <div class="clear">U</div>
+  <div class="demoIcon iconBgUncleD" title="UncleD"></div>
+  <div class="demoIcon iconBgUnion" title="Union"></div>
+  <div class="demoIcon iconBgUnionPay" title="UnionPay"></div>
+  <div class="demoIcon iconBgUp" title="Up"></div>
+  <div class="demoIcon iconBgUpArrow" title="UpArrow"></div>
+  <div class="demoIcon iconBgUpArrowLight" title="UpArrowLight"></div>
+  <div class="demoIcon iconBgUpLight" title="UpLight"></div>
+  <div class="demoIcon iconBgUpload" title="Upload"></div>
+  <div class="demoIcon iconBgUploadLight" title="UploadLight"></div>
+  <div class="demoIcon iconBgUpTriangle" title="UpTriangle"></div>
+  <div class="clear">V</div>
+  <div class="demoIcon iconBgVehicle" title="Vehicle"></div>
+  <div class="demoIcon iconBgVehicleLight" title="VehicleLight"></div>
+  <div class="demoIcon iconBgVideo" title="Video"></div>
+  <div class="demoIcon iconBgVideoFilled" title="VideoFilled"></div>
+  <div class="demoIcon iconBgVideoLight" title="VideoLight"></div>
+  <div class="demoIcon iconBgVisa" title="Visa"></div>
+  <div class="demoIcon iconBgVisible" title="Visible"></div>
+  <div class="demoIcon iconBgVisibleFilledLight" title="VisibleFilledLight"></div>
+  <div class="demoIcon iconBgVisibleLight" title="VisibleLight"></div>
+  <div class="demoIcon iconBgVoice" title="Voice"></div>
+  <div class="demoIcon iconBgVoiceLight" title="VoiceLight"></div>
+  <div class="clear">W</div>
+  <div class="demoIcon iconBgWait" title="Wait"></div>
+  <div class="demoIcon iconBgWaitLight" title="WaitLight"></div>
+  <div class="demoIcon iconBgWallet" title="Wallet"></div>
+  <div class="demoIcon iconBgWalletAdd" title="WalletAdd"></div>
+  <div class="demoIcon iconBgWalletAddLight" title="WalletAddLight"></div>
+  <div class="demoIcon iconBgWalletLight" title="WalletLight"></div>
+  <div class="demoIcon iconBgWarn" title="Warn"></div>
+  <div class="demoIcon iconBgWarnLight" title="WarnLight"></div>
+  <div class="demoIcon iconBgWeChatPay" title="WeChatPay"></div>
+  ```
+*/
+
+// A
+$iconAdd: url('../svg/Add.svg');
+$iconAddCircle: url('../svg/AddCircle.svg');
+$iconAddCircleFilled: url('../svg/AddCircleFilled.svg');
+$iconAddCircleFilledLight: url('../svg/AddCircleFilledLight.svg');
+$iconAddCircleLight: url('../svg/AddCircleLight.svg');
+$iconAddLight: url('../svg/AddLight.svg');
+$iconAddLocation: url('../svg/AddLocation.svg');
+$iconAddLocation2: url('../svg/AddLocation2.svg');
+$iconAddLocationFilled: url('../svg/AddLocationFilled.svg');
+$iconAddLocationFilledLight: url('../svg/AddLocationFilledLight.svg');
+$iconAddLocationLight: url('../svg/AddLocationLight.svg');
+$iconAddressbook: url('../svg/Addressbook.svg');
+$iconAddressbookLight: url('../svg/AddressbookLight.svg');
+$iconAlipay: url('../svg/Alipay.svg');
+$iconAmex: url('../svg/Amex.svg');
+$iconApple: url('../svg/Apple.svg');
+$iconArchive: url('../svg/Archive.svg');
+$iconArchiveLight: url('../svg/ArchiveLight.svg');
+$iconAttachment: url('../svg/Attechment.svg');
+$iconAttachmentLight: url('../svg/AttechmentLight.svg');
+
+// B
+$iconBangkokBank: url('../svg/BangkokBank.svg');
+$iconBank: url('../svg/Bank.svg');
+$iconBellLight: url('../svg/BellLight.svg');
+$iconBellWithBadge: url('../svg/BellWithBadge.svg');
+$iconBellWithBadgeLight: url('../svg/BellWithBadgeLight.svg');
+$iconBHIMUPI: url('../svg/BHIMUPI.svg');
+$iconBin: url('../svg/Bin.svg');
+$iconBinLight: url('../svg/BinLight.svg');
+$iconBoletoBancario: url('../svg/BoletoBancario.svg');
+$iconBookmark: url('../svg/Bookmark.svg');
+$iconBookmarkAdd: url('../svg/BookmarkAdd.svg');
+$iconBookmarkAddFilled: url('../svg/BookmarkAddFilled.svg');
+$iconBookmarkAddFilledLight: url('../svg/BookmarkAddFilledLight.svg');
+$iconBookmarkAddLight: url('../svg/BookmarkAddLight.svg');
+$iconBookmarkFilled: url('../svg/BookmarkFilled.svg');
+$iconBookmarkFilledLight: url('../svg/BookmarkFilledLight.svg');
+$iconBookmarkLight: url('../svg/BookmarkLight.svg');
+$iconBoxes: url('../svg/Boxes.svg');
+$iconBoxesLight: url('../svg/BoxesLight.svg');
+$iconBubblePin: url('../svg/BubblePin.svg');
+$iconBubblePinFilled: url('../svg/BubblePinFilled.svg');
+$iconBubblePinLight: url('../svg/BubblePinLight.svg');
+$iconBuilding: url('../svg/Building.svg');
+$iconBuildingLight: url('../svg/BuildingLight.svg');
+$iconBulb: url('../svg/Bulb.svg');
+$iconBulbFilled: url('../svg/BulbFilled.svg');
+$iconBulbFilledLight: url('../svg/BulbFilledLight.svg');
+$iconBulbLight: url('../svg/BulbLight.svg');
+$iconBusiness: url('../svg/Business.svg');
+$iconBusinessFilled: url('../svg/BusinessFilled.svg');
+$iconBusinessFilledLight: url('../svg/BusinessFilledLight.svg');
+$iconBusinessLight: url('../svg/BusinessLight.svg');
+
+// C
+$iconCalendar: url('../svg/Calendar.svg');
+$iconCalendarLight: url('../svg/CalendarLight.svg');
+$iconCamera: url('../svg/Camera.svg');
+$iconCameraLight: url('../svg/CameraLight.svg');
+$iconCash: url('../svg/Cash.svg');
+$iconCashLight: url('../svg/CashLight.svg');
+$iconCaution: url('../svg/Caution.svg');
+$iconCautionLight: url('../svg/CautionLight.svg');
+$iconChange: url('../svg/Change.svg');
+$iconChangeLight: url('../svg/ChangeLight.svg');
+$iconChart: url('../svg/Chart.svg');
+$iconChartLight: url('../svg/ChartLight.svg');
+$iconCheckbox: url('../svg/Checkbox.svg');
+$iconCheckboxChecked: url('../svg/CheckboxChecked.svg');
+$iconCheckboxLight: url('../svg/CheckboxLight.svg');
+$iconChest: url('../svg/Chest.svg');
+$iconChestLight: url('../svg/ChestLight.svg');
+$iconClose: url('../svg/Close.svg');
+$iconClose2: url('../svg/Close2.svg');
+$iconClose2Light: url('../svg/Close2Light.svg');
+$iconCloseLight: url('../svg/CloseLight.svg');
+$iconCloudUpload: url('../svg/CloudUpload.svg');
+$iconCloudUploadFilled: url('../svg/CloudUploadFilled.svg');
+$iconCloudUploadFilledLight: url('../svg/CloudUploadFilledLight.svg');
+$iconCloudUploadLight: url('../svg/CloudUploadLight.svg');
+$iconCompany: url('../svg/Company.svg');
+$iconCompanyLight: url('../svg/CompanyLight.svg');
+$iconCompass: url('../svg/Compass.svg');
+$iconCompassLight: url('../svg/CompassLight.svg');
+$iconContactbook: url('../svg/Contactbook.svg');
+$iconContactbookLight: url('../svg/ContactbookLight.svg');
+$iconConversation: url('../svg/Conversation.svg');
+$iconConversationFilled: url('../svg/ConversationFilled.svg');
+$iconConversationLight: url('../svg/ConversationLight.svg');
+$iconCopy: url('../svg/Copy.svg');
+$iconCopyLight: url('../svg/CopyLight.svg');
+$iconCreditCard: url('../svg/CreditCard.svg');
+$iconCreditCardAdd: url('../svg/CreditCardAdd.svg');
+$iconCreditCardAddLight: url('../svg/CreditCardAddLight.svg');
+$iconCreditCardLight: url('../svg/CreditCardLight.svg');
+$iconCS: url('../svg/CS.svg');
+$iconCSLight: url('../svg/CSLight.svg');
+$iconCVV: url('../svg/CVV.svg');
+
+// D
+$iconDashboard: url('../svg/Dashboard.svg');
+$iconDashboardLight: url('../svg/DashboardLight.svg');
+$iconDelete: url('../svg/Delete.svg');
+$iconDeleteFilled: url('../svg/DeleteFilled.svg');
+$iconDeleteFilledLight: url('../svg/DeleteFilledLight.svg');
+$iconDeleteLight: url('../svg/DeleteLight.svg');
+$iconDeleteStop: url('../svg/DeleteStop.svg');
+$iconDeletestopFilled: url('../svg/DeletestopFilled.svg');
+$iconDeleteStopLight: url('../svg/DeleteStopLight.svg');
+$iconDetails: url('../svg/Details.svg');
+$iconDetailsLight: url('../svg/DetailsLight.svg');
+$iconDiscount: url('../svg/Discount.svg');
+$iconDiscountLight: url('../svg/DiscountLight.svg');
+$iconDiscountPolygon: url('../svg/DiscountPolygon.svg');
+$iconDiscountPolygonFilled: url('../svg/DiscountPolygonFilled.svg');
+$iconDiscountPolygonFilledLight: url('../svg/DiscountPolygonFilledLight.svg');
+$iconDiscountPolygonLight: url('../svg/DiscountPolygonLight.svg');
+$iconDown: url('../svg/Down.svg');
+$iconDownArrow: url('../svg/DownArrow.svg');
+$iconDownArrowLight: url('../svg/DownArrowLight.svg');
+$iconDownTriangle: url('../svg/DownTriangle.svg');
+$iconDriverKitLalamove: url('../svg/DriverKitLalamove.svg');
+$iconDriverKitLalamoveLight: url('../svg/DriverKitLalamoveLight.svg');
+$iconDriverKitUncleD: url('../svg/DriverKitUncleD.svg');
+$iconDriverKitUncleDLight: url('../svg/DriverKitUncleDLight.svg');
+$iconDrivers: url('../svg/Drivers.svg');
+$iconDriversLight: url('../svg/DriversLight.svg');
+
+// E
+$iconEdit: url('../svg/Edit.svg');
+$iconEdit2: url('../svg/Edit2.svg');
+$iconEdit2Light: url('../svg/Edit2Light.svg');
+$iconEditLight: url('../svg/EditLight.svg');
+$iconElo: url('../svg/Elo.svg');
+$iconEmail: url('../svg/Email.svg');
+$iconEmailLight: url('../svg/EmailLight.svg');
+
+// F
+$iconFacebook: url('../svg/Facebook.svg');
+$iconFacebookColored: url('../svg/FacebookColored.svg');
+$iconFall: url('../svg/Fall.svg');
+$iconFallLight: url('../svg/FallLight.svg');
+$iconFAQ: url('../svg/FAQ.svg');
+$iconFAQLight: url('../svg/FAQLight.svg');
+$iconFavorite: url('../svg/Favourite.svg');
+$iconFavoriteFilled: url('../svg/FavouriteFilled.svg');
+$iconFavoriteLight: url('../svg/FavouriteLight.svg');
+$iconFilter: url('../svg/Filter.svg');
+$iconFilterLight: url('../svg/FilterLight.svg');
+$iconFilterWithBadge: url('../svg/FilterWithBadge.svg');
+$iconFilterWithBadgeLight: url('../svg/FilterWithBadgeLight.svg');
+
+// G
+$iconGallery: url('../svg/Gallery.svg');
+$iconGalleryLight: url('../svg/GalleryLight.svg');
+$iconGCash: url('../svg/GCash.svg');
+$iconGift: url('../svg/Gift.svg');
+$iconGiftFilled: url('../svg/GiftFilled.svg');
+$iconGiftFilledLight: url('../svg/GiftFilledLight.svg');
+$iconGiftLight: url('../svg/GiftLight.svg');
+$iconGlobal: url('../svg/Global.svg');
+$iconGlobalLight: url('../svg/GlobalLight.svg');
+$iconGoogle: url('../svg/Google.svg');
+$iconGoogleColored: url('../svg/GoolgeColored.svg');
+
+// H
+$iconHandshake: url('../svg/Handshake.svg');
+$iconHandshakeLight: url('../svg/HandshakeLight.svg');
+$iconHelp: url('../svg/Help.svg');
+$iconHelpLight: url('../svg/HelpLight.svg');
+$iconHiper: url('../svg/Hiper.svg');
+$iconHipercard: url('../svg/Hipercard.svg');
+$iconHistory: url('../svg/History.svg');
+$iconHistoryLight: url('../svg/HistoryLight.svg');
+$iconHome: url('../svg/Home.svg');
+$iconHomeLight: url('../svg/HomeLight.svg');
+
+// I
+$iconInfo: url('../svg/Info.svg');
+$iconInfoFilled: url('../svg/InfoFilled.svg');
+$iconInfoLight: url('../svg/InfoLight.svg');
+$iconInvisibleFilled: url('../svg/InvisibleFilled.svg');
+
+// J
+$iconJCB: url('../svg/JCB.svg');
+
+// K
+$iconKasikornBank: url('../svg/KasikornBank.svg');
+$iconKey: url('../svg/Key.svg');
+$iconKeyLight: url('../svg/KeyLight.svg');
+$iconKrungsriBank: url('../svg/KrungsriBank.svg');
+$iconKrungthaiBank: url('../svg/KrungthaiBank.svg');
+
+// L
+$iconLalamove: url('../svg/Lalamove.svg');
+$iconLalamoveColored: url('../svg/LalamoveColored.svg');
+$iconLanguage: url('../svg/Language.svg');
+$iconLanguageLight: url('../svg/LanguageLight.svg');
+$iconLeft: url('../svg/Left.svg');
+$iconLeftArrow: url('../svg/LeftArrow.svg');
+$iconLeftArrowLight: url('../svg/LeftArrowLight.svg');
+$iconLeftLight: url('../svg/LeftLight.svg');
+$iconLeftTriangle: url('../svg/LeftTriangle.svg');
+$iconLocationPin: url('../svg/LocationPin.svg');
+$iconLocationPinLight: url('../svg/LocationPinLight.svg');
+$iconLocator: url('../svg/Locator.svg');
+$iconLock: url('../svg/Lock.svg');
+$iconLockLight: url('../svg/LockLight.svg');
+$iconLogin: url('../svg/Login.svg');
+$iconLoginLight: url('../svg/LoginLight.svg');
+
+// M
+$iconMaestrocard: url('../svg/Maestrocard.svg');
+$iconMandiriClickpay: url('../svg/MandiriClickpay.svg');
+$iconMap: url('../svg/Map.svg');
+$iconMastercard: url('../svg/Mastercard.svg');
+$iconMembership: url('../svg/Membership.svg');
+$iconMembership2: url('../svg/Membership2.svg');
+$iconMembership2Light: url('../svg/Membership2Light.svg');
+$iconMembership3: url('../svg/Membership3.svg');
+$iconMembership3Light: url('../svg/Membership3Light.svg');
+$iconMembershipLight: url('../svg/MembershipLight.svg');
+$iconMenu: url('../svg/Menu.svg');
+$iconMenuLight: url('../svg/MenuLight.svg');
+$iconMenuWithBadge: url('../svg/MenuWithBadge.svg');
+$iconMenuWithBadgeLight: url('../svg/MenuWithBadgeLight.svg');
+$iconMessageCircle: url('../svg/MessageCircle.svg');
+$iconMessageCircleLight: url('../svg/MessageCircleLight.svg');
+$iconMessageCircleWithBadge: url('../svg/MessageCircleWithBadge.svg');
+$iconMessageCircleWithBadgeLight: url('../svg/MessageCircleWithBadgeLight.svg');
+$iconMessageExclamationCircle: url('../svg/MessageExclamationCircle.svg');
+$iconMessageExclamationCircleLight: url('../svg/MessageExclamationCircleLight.svg');
+$iconMessageExclamationCircleWithBadge: url('../svg/MessageExclamationCircleWithBadge.svg');
+$iconMessageExclamationCircleWithBadgeLight: url('../svg/MessageExclamationCircleWithBadgeLight.svg');
+$iconMessageSquare: url('../svg/MessageSquare.svg');
+$iconMessageSquareLight: url('../svg/MessageSquareLight.svg');
+$iconMessageSquareWithBadge: url('../svg/MessageSquareWithBadge.svg');
+$iconMessageSquareWithBadgeLight: url('../svg/MessageSquareWithBadgeLight.svg');
+$iconMissions: url('../svg/Messions.svg');
+$iconMidstop: url('../svg/Midstop.svg');
+$iconMissionsLight: url('../svg/MissionsLight.svg');
+$iconMomo: url('../svg/Momo.svg');
+
+// N
+$iconNavigation: url('../svg/Navigation.svg');
+$iconNavigationFilled: url('../svg/NavigationFilled.svg');
+$iconNavigationLight: url('../svg/NavigationLight.svg');
+$iconNotifications: url('../svg/Notifications.svg');
+$iconNotificationsLight: url('../svg/NotificationsLight.svg');
+$iconNotificationsWithBadge: url('../svg/NotificationsWithBadge.svg');
+$iconNotificationsWithBadgeLight: url('../svg/NotificationsWithBadgeLight.svg');
+
+// O
+$iconOnlinePaymentDesktop: url('../svg/OnlinePaymentDesktop.svg');
+$iconOnlinePaymentDesktopLight: url('../svg/OnlinePaymentDesktopLight.svg');
+$iconOnlinePaymentPhone: url('../svg/OnlinePaymentPhone.svg');
+$iconOnlinePaymentPhoneLight: url('../svg/OnlinePaymentPhoneLight.svg');
+$iconOnOff: url('../svg/OnOff.svg');
+$iconOnOffLight: url('../svg/OnOffLight.svg');
+$iconOptionsHorizontal: url('../svg/OptionsHorizontal.svg');
+$iconOptionsVertical: url('../svg/OptionsVertical.svg');
+$iconOrder: url('../svg/Order.svg');
+$iconOrderLight: url('../svg/OrderLight.svg');
+$iconOvercharge: url('../svg/Overcharge.svg');
+$iconOverchargeLight: url('../svg/OverchargeLight.svg');
+
+// P
+$iconParcel: url('../svg/Parcel.svg');
+$iconParcelLight: url('../svg/ParcelLight.svg');
+$iconPath: url('../svg/Path.svg');
+$iconPathLight: url('../svg/PathLight.svg');
+$iconPayMe: url('../svg/PayMe.svg');
+$iconPermataBank: url('../svg/PermataBank.svg');
+$iconPersonal: url('../svg/Personal.svg');
+$iconPersonalCircle: url('../svg/PersonalCircle.svg');
+$iconPersonalCircleFilled: url('../svg/PersonalCircleFilled.svg');
+$iconPersonalCircleFilledLight: url('../svg/PersonalCircleFilledLight.svg');
+$iconPersonalCircleLight: url('../svg/PersonalCircleLight.svg');
+$iconPersonalFilled: url('../svg/PersonalFilled.svg');
+$iconPersonalFilledLight: url('../svg/PersonalFilledLight.svg');
+$iconPersonalLight: url('../svg/PersonalLight.svg');
+$iconPickup: url('../svg/Pickup.svg');
+$iconPin: url('../svg/Pin.svg');
+$iconPinFilled: url('../svg/PinFilled.svg');
+$iconPinLight: url('../svg/PinLight.svg');
+$iconPODFailed: url('../svg/PODFailed.svg');
+$iconPODSuccess: url('../svg/PODSuccess.svg');
+$iconPricing: url('../svg/Pricing.svg');
+$iconPricingLight: url('../svg/PricingLight.svg');
+$iconPromoCode: url('../svg/PromoCode.svg');
+$iconPromoCodeAdd: url('../svg/PromoCodeAdd.svg');
+$iconPromoCodeAddLight: url('../svg/PromoCodeAddLight.svg');
+$iconPromoCodeFilled: url('../svg/PromoCodeFilled.svg');
+$iconPromoCodeLight: url('../svg/PromoCodeLight.svg');
+
+// R
+$iconRadio: url('../svg/Radio.svg');
+$iconRadioLight: url('../svg/RadioLight.svg');
+$iconRadioSelected: url('../svg/RadioSelected.svg');
+$iconRadioSelectedFilled: url('../svg/RadioSelectedFilled.svg');
+$iconRadioSelectedLight: url('../svg/RadioSelectedLight.svg');
+$iconRates: url('../svg/Rates.svg');
+$iconRatesLight: url('../svg/RatesLight.svg');
+$iconReceipt: url('../svg/Receipt.svg');
+$iconReceiptLight: url('../svg/ReceiptLight.svg');
+$iconReceive: url('../svg/Receive.svg');
+$iconReceiveLight: url('../svg/ReceiveLight.svg');
+$iconRefreshHorizontal: url('../svg/RefreshHorizontal.svg');
+$iconRefreshHorizontalLight: url('../svg/RefreshHorizontalLight.svg');
+$iconRefreshVertical: url('../svg/RefreshVertical.svg');
+$iconRefreshVerticalLight: url('../svg/RefreshVerticalLight.svg');
+$iconRemarks: url('../svg/Remarks.svg');
+$iconRemarksLight: url('../svg/RemarksLight.svg');
+$iconRemarksWithBadge: url('../svg/RemarksWithBadge.svg');
+$iconRemarksWithBadgeLight: url('../svg/RemarksWithBadgeLight.svg');
+$iconRemove: url('../svg/Remove.svg');
+$iconRemoveLight: url('../svg/RemoveLight.svg');
+$iconReroute: url('../svg/Reroute.svg');
+$iconRerouteLight: url('../svg/RerouteLight.svg');
+$iconRewards: url('../svg/Rewards.svg');
+$iconRewards2: url('../svg/Rewards2.svg');
+$iconRewards2Light: url('../svg/Rewards2Light.svg');
+$iconRewardsFilled: url('../svg/RewardsFilled.svg');
+$iconRewardsLight: url('../svg/RewardsLight.svg');
+$iconRight: url('../svg/Right.svg');
+$iconRightArrow: url('../svg/RightArrow.svg');
+$iconRightArrowLight: url('../svg/RightArrowLight.svg');
+$iconRightLight: url('../svg/RightLight.svg');
+$iconRightTriangle: url('../svg/RightTriangle.svg');
+$iconRise: url('../svg/Rise.svg');
+$iconRiseLight: url('../svg/RiseLight.svg');
+
+// S
+$iconSearch: url('../svg/Search.svg');
+$iconSearchLight: url('../svg/SearchLight.svg');
+$iconSend: url('../svg/Send.svg');
+$iconSendLight: url('../svg/SendLight.svg');
+$iconSettings: url('../svg/Settings.svg');
+$iconSettingsLight: url('../svg/SettingsLight.svg');
+$iconSettingsWithBadge: url('../svg/SettingsWithBadge.svg');
+$iconSettingsWithBadgeLight: url('../svg/SettingsWithBadgeLight.svg');
+$iconShare: url('../svg/Share.svg');
+$iconShare2: url('../svg/Share2.svg');
+$iconShare2Light: url('../svg/Share2Light.svg');
+$iconShareLight: url('../svg/ShareLight.svg');
+$iconSiamCommercialBank: url('../svg/SiamCommercialBank.svg');
+$iconSignature: url('../svg/Signature.svg');
+$iconSignatureLight: url('../svg/SignatureLight.svg');
+$iconSound: url('../svg/Sound.svg');
+$iconSoundLight: url('../svg/SoundLight.svg');
+$iconSoundMuted: url('../svg/SoundMuted.svg');
+$iconSoundMutedLight: url('../svg/SoundMutedLight.svg');
+$iconSpeaker: url('../svg/Speaker.svg');
+$iconSpeakerLight: url('../svg/SpeakerLight.svg');
+$iconStar: url('../svg/Star.svg');
+$iconStarFilled: url('../svg/StarFilled.svg');
+$iconStarLight: url('../svg/StarLight.svg');
+$iconStickerLalamove: url('../svg/StickerLalamove.svg');
+$iconStickerLalamoveLight: url('../svg/StickerLalamvoeLight.svg');
+$iconStickerUncleD: url('../svg/StickerUncleD.svg');
+$iconStickerUncleDLight: url('../svg/StickerUncleDLight.svg');
+$iconStop: url('../svg/Stop.svg');
+$iconStopLight: url('../svg/StopLight.svg');
+$iconSubtractFilledLight: url('../svg/SubtractFilledLight.svg');
+
+// T
+$iconTaxInvoice: url('../svg/TaxInvoice.svg');
+$iconTaxInvoiceLight: url('../svg/TaxInvoiceLight.svg');
+$iconTel: url('../svg/Tel.svg');
+$iconTelLight: url('../svg/TelLight.svg');
+$iconTerms: url('../svg/Terms.svg');
+$iconTermsLight: url('../svg/TermsLight.svg');
+$iconTescoLotus: url('../svg/TescoLotus.svg');
+$iconTick: url('../svg/Tick.svg');
+$iconTickCircle: url('../svg/TickCircle.svg');
+$iconTickCircleFilled: url('../svg/TickCircleFilled.svg');
+$iconTickCircleFilledLight: url('../svg/TickCircleFilledLight.svg');
+$iconTickCircleLight: url('../svg/TickCircleLight.svg');
+$iconTickLight: url('../svg/TickLight.svg');
+$iconTimer: url('../svg/Timer.svg');
+$iconTimer2: url('../svg/Timer2.svg');
+$iconTimer2Light: url('../svg/Timer2Light.svg');
+$iconTimer3: url('../svg/Timer3.svg');
+$iconTimer3Light: url('../svg/Timer3Light.svg');
+$iconTimerLight: url('../svg/TimerLight.svg');
+$iconToolkit: url('../svg/Toolkit.svg');
+$iconToolkitLight: url('../svg/ToolkitLight.svg');
+$iconToTop: url('../svg/ToTop.svg');
+$iconToTopLight: url('../svg/ToTopLight.svg');
+
+// U
+$iconUncleD: url('../svg/UncleD.svg');
+$iconUnion: url('../svg/Union.svg');
+$iconUnionPay: url('../svg/UnionPay.svg');
+$iconUp: url('../svg/Up.svg');
+$iconUpArrow: url('../svg/UpArrow.svg');
+$iconUpArrowLight: url('../svg/UpArrowLight.svg');
+$iconUpLight: url('../svg/UpLight.svg');
+$iconUpload: url('../svg/Upload.svg');
+$iconUploadLight: url('../svg/UploadLight.svg');
+$iconUpTriangle: url('../svg/UpTriangle.svg');
+
+// V
+$iconVehicle: url('../svg/Vehicle.svg');
+$iconVehicleLight: url('../svg/VehicleLight.svg');
+$iconVideo: url('../svg/Video.svg');
+$iconVideoFilled: url('../svg/VideoFilled.svg');
+$iconVideoLight: url('../svg/VideoLight.svg');
+$iconVisa: url('../svg/Visa.svg');
+$iconVisible: url('../svg/Visible.svg');
+$iconVisibleFilledLight: url('../svg/VisibleFilledLight.svg');
+$iconVisibleLight: url('../svg/VisibleLight.svg');
+$iconVoice: url('../svg/Voice.svg');
+$iconVoiceLight: url('../svg/VoiceLight.svg');
+
+// W
+$iconWait: url('../svg/Wait.svg');
+$iconWaitLight: url('../svg/WaitLight.svg');
+$iconWallet: url('../svg/Wallet.svg');
+$iconWalletAdd: url('../svg/WalletAdd.svg');
+$iconWalletAddLight: url('../svg/WalletAddLight.svg');
+$iconWalletLight: url('../svg/WalletLight.svg');
+$iconWarn: url('../svg/Warn.svg');
+$iconWarnLight: url('../svg/WarnLight.svg');
+$iconWeChatPay: url('../svg/WeChatPay.svg');
+
+
+$iconA: (
+  "Add": $iconAdd,
+  "AddCircle": $iconAddCircle,
+  "AddCircleFilled": $iconAddCircleFilled,
+  "AddCircleFilledLight": $iconAddCircleFilledLight,
+  "AddCircleLight": $iconAddCircleLight,
+  "AddLight": $iconAddLight,
+  "AddLocation": $iconAddLocation,
+  "AddLocation2": $iconAddLocation2,
+  "AddLocationFilled": $iconAddLocationFilled,
+  "AddLocationFilledLight": $iconAddLocationFilledLight,
+  "AddLocationLight": $iconAddLocationLight,
+  "Addressbook": $iconAddressbook,
+  "AddressbookLight": $iconAddressbookLight,
+  "Alipay": $iconAlipay,
+  "Amex": $iconAmex,
+  "Apple": $iconApple,
+  "Archive": $iconArchive,
+  "ArchiveLight": $iconArchiveLight,
+  "Attachment": $iconAttachment,
+  "AttachmentLight": $iconAttachmentLight
+);
+
+$iconB: (
+  "BangkokBank": $iconBangkokBank,
+  "Bank": $iconBank,
+  "BellLight": $iconBellLight,
+  "BellWithBadge": $iconBellWithBadge,
+  "BellWithBadgeLight": $iconBellWithBadgeLight,
+  "BHIMUPI": $iconBHIMUPI,
+  "Bin": $iconBin,
+  "BinLight": $iconBinLight,
+  "BoletoBancario": $iconBoletoBancario,
+  "Bookmark": $iconBookmark,
+  "BookmarkAdd": $iconBookmarkAdd,
+  "BookmarkAddFilled": $iconBookmarkAddFilled,
+  "BookmarkAddFilledLight": $iconBookmarkAddFilledLight,
+  "BookmarkAddLight": $iconBookmarkAddLight,
+  "BookmarkFilled": $iconBookmarkFilled,
+  "BookmarkFilledLight": $iconBookmarkFilledLight,
+  "BookmarkLight": $iconBookmarkLight,
+  "Boxes": $iconBoxes,
+  "BoxesLight": $iconBoxesLight,
+  "BubblePin": $iconBubblePin,
+  "BubblePinFilled": $iconBubblePinFilled,
+  "BubblePinLight": $iconBubblePinLight,
+  "Building": $iconBuilding,
+  "BuildingLight": $iconBuildingLight,
+  "Bulb": $iconBulb,
+  "BulbFilled": $iconBulbFilled,
+  "BulbFilledLight": $iconBulbFilledLight,
+  "BulbLight": $iconBulbLight,
+  "Business": $iconBusiness,
+  "BusinessFilled": $iconBusinessFilled,
+  "BusinessFilledLight": $iconBusinessFilledLight,
+  "BusinessLight": $iconBusinessLight,
+);
+
+$iconC: (
+  "Calendar": $iconCalendar,
+  "CalendarLight": $iconCalendarLight,
+  "Camera": $iconCamera,
+  "CameraLight": $iconCameraLight,
+  "Cash": $iconCash,
+  "CashLight": $iconCashLight,
+  "Caution": $iconCaution,
+  "CautionLight": $iconCautionLight,
+  "Change": $iconChange,
+  "ChangeLight": $iconChangeLight,
+  "Chart": $iconChart,
+  "ChartLight": $iconChartLight,
+  "Checkbox": $iconCheckbox,
+  "CheckboxChecked": $iconCheckboxChecked,
+  "CheckboxLight": $iconCheckboxLight,
+  "Chest": $iconChest,
+  "ChestLight": $iconChestLight,
+  "Close": $iconClose,
+  "Close2": $iconClose2,
+  "Close2Light": $iconClose2Light,
+  "CloseLight": $iconCloseLight,
+  "CloudUpload": $iconCloudUpload,
+  "CloudUploadFilled": $iconCloudUploadFilled,
+  "CloudUploadFilledLight": $iconCloudUploadFilledLight,
+  "CloudUploadLight": $iconCloudUploadLight,
+  "Company": $iconCompany,
+  "CompanyLight": $iconCompanyLight,
+  "Compass": $iconCompass,
+  "CompassLight": $iconCompassLight,
+  "Contactbook": $iconContactbook,
+  "ContactbookLight": $iconContactbookLight,
+  "Conversation": $iconConversation,
+  "ConversationFilled": $iconConversationFilled,
+  "ConversationLight": $iconConversationLight,
+  "Copy": $iconCopy,
+  "CopyLight": $iconCopyLight,
+  "CreditCard": $iconCreditCard,
+  "CreditCardAdd": $iconCreditCardAdd,
+  "CreditCardAddLight": $iconCreditCardAddLight,
+  "CreditCardLight": $iconCreditCardLight,
+  "CS": $iconCS,
+  "CSLight": $iconCSLight,
+  "CVV": $iconCVV
+);
+
+$iconD: (
+  "Dashboard": $iconDashboard,
+  "DashboardLight": $iconDashboardLight,
+  "Delete": $iconDelete,
+  "DeleteFilled": $iconDeleteFilled,
+  "DeleteFilledLight": $iconDeleteFilledLight,
+  "DeleteLight": $iconDeleteLight,
+  "DeleteStop": $iconDeleteStop,
+  "DeletestopFilled": $iconDeletestopFilled,
+  "DeleteStopLight": $iconDeleteStopLight,
+  "Details": $iconDetails,
+  "DetailsLight": $iconDetailsLight,
+  "Discount": $iconDiscount,
+  "DiscountLight": $iconDiscountLight,
+  "DiscountPolygon": $iconDiscountPolygon,
+  "DiscountPolygonFilled": $iconDiscountPolygonFilled,
+  "DiscountPolygonFilledLight": $iconDiscountPolygonFilledLight,
+  "DiscountPolygonLight": $iconDiscountPolygonLight,
+  "Down": $iconDown,
+  "DownArrow": $iconDownArrow,
+  "DownArrowLight": $iconDownArrowLight,
+  "DownTriangle": $iconDownTriangle,
+  "DriverKitLalamove": $iconDriverKitLalamove,
+  "DriverKitLalamoveLight": $iconDriverKitLalamoveLight,
+  "DriverKitUncleD": $iconDriverKitUncleD,
+  "DriverKitUncleDLight": $iconDriverKitUncleDLight,
+  "Drivers": $iconDrivers,
+  "DriversLight": $iconDriversLight,
+);
+
+$iconE: (
+  "Edit": $iconEdit,
+  "Edit2": $iconEdit2,
+  "Edit2Light": $iconEdit2Light,
+  "EditLight": $iconEditLight,
+  "Elo": $iconElo,
+  "Email": $iconEmail,
+  "EmailLight": $iconEmailLight,
+);
+
+$iconF: (
+  "Facebook": $iconFacebook,
+  "FacebookColored": $iconFacebookColored,
+  "Fall": $iconFall,
+  "FallLight": $iconFallLight,
+  "FAQ": $iconFAQ,
+  "FAQLight": $iconFAQLight,
+  "Favorite": $iconFavorite,
+  "FavoriteFilled": $iconFavoriteFilled,
+  "FavoriteLight": $iconFavoriteLight,
+  "Filter": $iconFilter,
+  "FilterLight": $iconFilterLight,
+  "FilterWithBadge": $iconFilterWithBadge,
+  "FilterWithBadgeLight": $iconFilterWithBadgeLight,
+);
+
+$iconG: (
+  "Gallery": $iconGallery,
+  "GalleryLight": $iconGalleryLight,
+  "GCash": $iconGCash,
+  "Gift": $iconGift,
+  "GiftFilled": $iconGiftFilled,
+  "GiftFilledLight": $iconGiftFilledLight,
+  "GiftLight": $iconGiftLight,
+  "Global": $iconGlobal,
+  "GlobalLight": $iconGlobalLight,
+  "Google": $iconGoogle,
+  "GoogleColored": $iconGoogleColored,
+);
+
+$iconH: (
+  "Handshake": $iconHandshake,
+  "HandshakeLight": $iconHandshakeLight,
+  "Help": $iconHelp,
+  "HelpLight": $iconHelpLight,
+  "Hiper": $iconHiper,
+  "Hipercard": $iconHipercard,
+  "History": $iconHistory,
+  "HistoryLight": $iconHistoryLight,
+  "Home": $iconHome,
+  "HomeLight": $iconHomeLight,
+);
+
+$iconI: (
+  "Info": $iconInfo,
+  "InfoFilled": $iconInfoFilled,
+  "InfoLight": $iconInfoLight,
+  "InvisibleFilled": $iconInvisibleFilled,
+);
+
+$iconJ: (
+  "JCB": $iconJCB,
+);
+
+$iconK: (
+  "KasikornBank": $iconKasikornBank,
+  "Key": $iconKey,
+  "KeyLight": $iconKeyLight,
+  "KrungsriBank": $iconKrungsriBank,
+  "KrungthaiBank": $iconKrungthaiBank,
+);
+
+$iconL: (
+  "Lalamove": $iconLalamove,
+  "LalamoveColored": $iconLalamoveColored,
+  "Language": $iconLanguage,
+  "LanguageLight": $iconLanguageLight,
+  "Left": $iconLeft,
+  "LeftArrow": $iconLeftArrow,
+  "LeftArrowLight": $iconLeftArrowLight,
+  "LeftLight": $iconLeftLight,
+  "LeftTriangle": $iconLeftTriangle,
+  "LocationPin": $iconLocationPin,
+  "LocationPinLight": $iconLocationPinLight,
+  "Locator": $iconLocator,
+  "Lock": $iconLock,
+  "LockLight": $iconLockLight,
+  "Login": $iconLogin,
+  "LoginLight": $iconLoginLight,
+);
+
+$iconM: (
+  "Maestrocard": $iconMaestrocard,
+  "MandiriClickpay": $iconMandiriClickpay,
+  "Map": $iconMap,
+  "Mastercard": $iconMastercard,
+  "Membership": $iconMembership,
+  "Membership2": $iconMembership2,
+  "Membership2Light": $iconMembership2Light,
+  "Membership3": $iconMembership3,
+  "Membership3Light": $iconMembership3Light,
+  "MembershipLight": $iconMembershipLight,
+  "Menu": $iconMenu,
+  "MenuLight": $iconMenuLight,
+  "MenuWithBadge": $iconMenuWithBadge,
+  "MenuWithBadgeLight": $iconMenuWithBadgeLight,
+  "MessageCircle": $iconMessageCircle,
+  "MessageCircleLight": $iconMessageCircleLight,
+  "MessageCircleWithBadge": $iconMessageCircleWithBadge,
+  "MessageCircleWithBadgeLight": $iconMessageCircleWithBadgeLight,
+  "MessageExclamationCircle": $iconMessageExclamationCircle,
+  "MessageExclamationCircleLight": $iconMessageExclamationCircleLight,
+  "MessageExclamationCircleWithBadge": $iconMessageExclamationCircleWithBadge,
+  "MessageExclamationCircleWithBadgeLight": $iconMessageExclamationCircleWithBadgeLight,
+  "MessageSquare": $iconMessageSquare,
+  "MessageSquareLight": $iconMessageSquareLight,
+  "MessageSquareWithBadge": $iconMessageSquareWithBadge,
+  "MessageSquareWithBadgeLight": $iconMessageSquareWithBadgeLight,
+  "Missions": $iconMissions,
+  "Midstop": $iconMidstop,
+  "MissionsLight": $iconMissionsLight,
+  "Momo": $iconMomo,
+);
+
+$iconN: (
+  "Navigation": $iconNavigation,
+  "NavigationFilled": $iconNavigationFilled,
+  "NavigationLight": $iconNavigationLight,
+  "Notifications": $iconNotifications,
+  "NotificationsLight": $iconNotificationsLight,
+  "NotificationsWithBadge": $iconNotificationsWithBadge,
+  "NotificationsWithBadgeLight": $iconNotificationsWithBadgeLight,
+);
+
+$iconO: (
+  "OnlinePaymentDesktop": $iconOnlinePaymentDesktop,
+  "OnlinePaymentDesktopLight": $iconOnlinePaymentDesktopLight,
+  "OnlinePaymentPhone": $iconOnlinePaymentPhone,
+  "OnlinePaymentPhoneLight": $iconOnlinePaymentPhoneLight,
+  "OnOff": $iconOnOff,
+  "OnOffLight": $iconOnOffLight,
+  "OptionsHorizontal": $iconOptionsHorizontal,
+  "OptionsVertical": $iconOptionsVertical,
+  "Order": $iconOrder,
+  "OrderLight": $iconOrderLight,
+  "Overcharge": $iconOvercharge,
+  "OverchargeLight": $iconOverchargeLight,
+);
+
+$iconP: (
+  "Parcel": $iconParcel,
+  "ParcelLight": $iconParcelLight,
+  "Path": $iconPath,
+  "PathLight": $iconPathLight,
+  "PayMe": $iconPayMe,
+  "PermataBank": $iconPermataBank,
+  "Personal": $iconPersonal,
+  "PersonalCircle": $iconPersonalCircle,
+  "PersonalCircleFilled": $iconPersonalCircleFilled,
+  "PersonalCircleFilledLight": $iconPersonalCircleFilledLight,
+  "PersonalCircleLight": $iconPersonalCircleLight,
+  "PersonalFilled": $iconPersonalFilled,
+  "PersonalFilledLight": $iconPersonalFilledLight,
+  "PersonalLight": $iconPersonalLight,
+  "Pickup": $iconPickup,
+  "Pin": $iconPin,
+  "PinFilled": $iconPinFilled,
+  "PinLight": $iconPinLight,
+  "PODFailed": $iconPODFailed,
+  "PODSuccess": $iconPODSuccess,
+  "Pricing": $iconPricing,
+  "PricingLight": $iconPricingLight,
+  "PromoCode": $iconPromoCode,
+  "PromoCodeAdd": $iconPromoCodeAdd,
+  "PromoCodeAddLight": $iconPromoCodeAddLight,
+  "PromoCodeFilled": $iconPromoCodeFilled,
+  "PromoCodeLight": $iconPromoCodeLight,
+);
+
+$iconR: (
+  "Radio": $iconRadio,
+  "RadioLight": $iconRadioLight,
+  "RadioSelected": $iconRadioSelected,
+  "RadioSelectedFilled": $iconRadioSelectedFilled,
+  "RadioSelectedLight": $iconRadioSelectedLight,
+  "Rates": $iconRates,
+  "RatesLight": $iconRatesLight,
+  "Receipt": $iconReceipt,
+  "ReceiptLight": $iconReceiptLight,
+  "Receive": $iconReceive,
+  "ReceiveLight": $iconReceiveLight,
+  "RefreshHorizontal": $iconRefreshHorizontal,
+  "RefreshHorizontalLight": $iconRefreshHorizontalLight,
+  "RefreshVertical": $iconRefreshVertical,
+  "RefreshVerticalLight": $iconRefreshVerticalLight,
+  "Remarks": $iconRemarks,
+  "RemarksLight": $iconRemarksLight,
+  "RemarksWithBadge": $iconRemarksWithBadge,
+  "RemarksWithBadgeLight": $iconRemarksWithBadgeLight,
+  "Remove": $iconRemove,
+  "RemoveLight": $iconRemoveLight,
+  "Reroute": $iconReroute,
+  "RerouteLight": $iconRerouteLight,
+  "Rewards": $iconRewards,
+  "Rewards2": $iconRewards2,
+  "Rewards2Light": $iconRewards2Light,
+  "RewardsFilled": $iconRewardsFilled,
+  "RewardsLight": $iconRewardsLight,
+  "Right": $iconRight,
+  "RightArrow": $iconRightArrow,
+  "RightArrowLight": $iconRightArrowLight,
+  "RightLight": $iconRightLight,
+  "RightTriangle": $iconRightTriangle,
+  "Rise": $iconRise,
+  "RiseLight": $iconRiseLight,
+);
+
+$iconS: (
+  "Search": $iconSearch,
+  "SearchLight": $iconSearchLight,
+  "Send": $iconSend,
+  "SendLight": $iconSendLight,
+  "Settings": $iconSettings,
+  "SettingsLight": $iconSettingsLight,
+  "SettingsWithBadge": $iconSettingsWithBadge,
+  "SettingsWithBadgeLight": $iconSettingsWithBadgeLight,
+  "Share": $iconShare,
+  "Share2": $iconShare2,
+  "Share2Light": $iconShare2Light,
+  "ShareLight": $iconShareLight,
+  "SiamCommercialBank": $iconSiamCommercialBank,
+  "Signature": $iconSignature,
+  "SignatureLight": $iconSignatureLight,
+  "Sound": $iconSound,
+  "SoundLight": $iconSoundLight,
+  "SoundMuted": $iconSoundMuted,
+  "SoundMutedLight": $iconSoundMutedLight,
+  "Speaker": $iconSpeaker,
+  "SpeakerLight": $iconSpeakerLight,
+  "Star": $iconStar,
+  "StarFilled": $iconStarFilled,
+  "StarLight": $iconStarLight,
+  "StickerLalamove": $iconStickerLalamove,
+  "StickerLalamoveLight": $iconStickerLalamoveLight,
+  "StickerUncleD": $iconStickerUncleD,
+  "StickerUncleDLight": $iconStickerUncleDLight,
+  "Stop": $iconStop,
+  "StopLight": $iconStopLight,
+  "SubtractFilledLight": $iconSubtractFilledLight,
+);
+
+$iconT: (
+  "TaxInvoice": $iconTaxInvoice,
+  "TaxInvoiceLight": $iconTaxInvoiceLight,
+  "Tel": $iconTel,
+  "TelLight": $iconTelLight,
+  "Terms": $iconTerms,
+  "TermsLight": $iconTermsLight,
+  "TescoLotus": $iconTescoLotus,
+  "Tick": $iconTick,
+  "TickCircle": $iconTickCircle,
+  "TickCircleFilled": $iconTickCircleFilled,
+  "TickCircleFilledLight": $iconTickCircleFilledLight,
+  "TickCircleLight": $iconTickCircleLight,
+  "TickLight": $iconTickLight,
+  "Timer": $iconTimer,
+  "Timer2": $iconTimer2,
+  "Timer2Light": $iconTimer2Light,
+  "Timer3": $iconTimer3,
+  "Timer3Light": $iconTimer3Light,
+  "TimerLight": $iconTimerLight,
+  "Toolkit": $iconToolkit,
+  "ToolkitLight": $iconToolkitLight,
+  "ToTop": $iconToTop,
+  "ToTopLight": $iconToTopLight,
+);
+
+$iconU: (
+  "UncleD": $iconUncleD,
+  "Union": $iconUnion,
+  "UnionPay": $iconUnionPay,
+  "Up": $iconUp,
+  "UpArrow": $iconUpArrow,
+  "UpArrowLight": $iconUpArrowLight,
+  "UpLight": $iconUpLight,
+  "Upload": $iconUpload,
+  "UploadLight": $iconUploadLight,
+  "UpTriangle": $iconUpTriangle,
+);
+
+$iconV: (
+  "Vehicle": $iconVehicle,
+  "VehicleLight": $iconVehicleLight,
+  "Video": $iconVideo,
+  "VideoFilled": $iconVideoFilled,
+  "VideoLight": $iconVideoLight,
+  "Visa": $iconVisa,
+  "Visible": $iconVisible,
+  "VisibleFilledLight": $iconVisibleFilledLight,
+  "VisibleLight": $iconVisibleLight,
+  "Voice": $iconVoice,
+  "VoiceLight": $iconVoiceLight,
+);
+
+$iconW: (
+  "Wait": $iconWait,
+  "WaitLight": $iconWaitLight,
+  "Wallet": $iconWallet,
+  "WalletAdd": $iconWalletAdd,
+  "WalletAddLight": $iconWalletAddLight,
+  "WalletLight": $iconWalletLight,
+  "Warn": $iconWarn,
+  "WarnLight": $iconWarnLight,
+  "WeChatPay": $iconWeChatPay,
+);
+
+$icons: map-collect(
+    $iconA, $iconB, $iconC, $iconD, 
+    $iconE, $iconF, $iconG, $iconH, 
+    $iconI, $iconJ, $iconK, $iconL, 
+    $iconM, $iconN, $iconO, $iconP,
+    $iconR, $iconS, $iconT, $iconU,
+    $iconV, $iconW
+  );

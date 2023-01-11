@@ -1,0 +1,106 @@
+@import '../helpers/index.scss';
+@import '../constants/colors.scss';
+@import '../constants/icons.scss';
+
+// css module used for demo playground
+body {
+  margin: 0px;
+}
+
+hr {
+  border-width: 1;
+}
+
+.demoTheme {
+  font-family: sans-serif;
+  font-style: normal;
+  font-size: 14px;
+  background-color: #f6f6f6;
+  padding: 8px;
+}
+
+.colorDemo{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: $nobel-050;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 11px;
+  font-weight: normal;
+
+  float: left;
+  margin: 10px;
+}
+
+.circleDemo{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: $nobel-050;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+
+  float: left;
+  margin: 20px;
+}
+
+.demoIcon {
+  float: left;
+  height: 45px;
+  width: 45px;
+  margin: 7px 10px;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+
+  // generate demo icons
+  @each $name, $iconsvg in $icons {
+    &.demoIcon#{$name} {
+      background-image: $iconsvg;
+    }
+  }
+}
+
+.button.buttonShort {  // just for demo
+  width: 200px;
+}
+
+.left {
+  margin: 5px;
+}
+
+.row {
+  align-items: center;
+}
+
+
+.clearWithHr {height: 5px; border-bottom:1px solid #e2e2e2;}
+// clear dividers
+.clear {clear:both;}
+.clear5 {height: 5px; clear:both;}
+.clear10 {height: 10px; clear:both;}
+.clear20 {height: 20px; clear:both;}
+
+.tableFontDemo{
+  border-spacing: 0px;
+}
+.tableFontDemo tr td {
+  border: 1px solid #e2e2e2;
+  padding: 16px;
+  vertical-align: text-top;
+}

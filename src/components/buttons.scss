@@ -1,0 +1,377 @@
+/*---
+title:   Buttons
+section: Overview
+---
+Makes use of `buttons.module.css` and `icons.module.css`
+
+#### Button Structure
+`.button` - base button class
+
+Components:
+- `.buttonIcon` - button's icon
+  - `.icon{icon-name}` - replace `{icon-name}` with any of the icon names
+- `.buttonText` - button label
+
+Example:
+```demo:html
+<button class="button buttonPrimary">
+  <div class="buttonIcon iconMembership"></div>
+  <div class="buttonText">Awesome Button</div>
+</button>
+```
+```html
+<button class="button buttonPrimary">
+  <div class="buttonIcon iconMembership"></div>
+  <div class="buttonText">Awesome Button</div>
+</button>
+```
+
+#### Button Width
+- `.buttonFixed` (default) - fixed 100% width
+- `.buttonIntrinsic` - fit content
+
+```demo:html
+<button class="spaced button buttonFixed">
+  <div class="buttonText">Fixed Button</div>
+</button>
+<button class="spaced button buttonIntrinsic">
+  <div class="buttonText">Intrinsic Button</div>
+</button>
+```
+```html
+<button class="button buttonFixed">
+  <div class="buttonText">Fixed Button</div>
+</button>
+<button class="button buttonIntrinsic">
+  <div class="buttonText">Intrinsic Button</div>
+</button>
+```
+
+#### Button Size
+- `.buttonSmall` (default)
+- `.buttonLarge`
+
+```demo:html
+<button class="spaced button buttonSmall">
+  <div class="buttonText">Small Button</div>
+</button>
+<button class="spaced button buttonLarge">
+  <div class="buttonText">Large Button</div>
+</button>
+```
+```html
+<button class="button buttonSmall">
+  <div class="buttonText">Small Button</div>
+</button>
+<button class="button buttonLarge">
+  <div class="buttonText">Large Button</div>
+</button>
+```
+
+#### Button Types
+- `.buttonPrimary`
+- `.buttonSecondary`
+- `.buttonTertiary`
+- `.buttonPill`
+- `.buttonAsIcon`
+
+```demo:html
+<button class="spaced button buttonPrimary">
+  <div class="buttonText">Primary Button</div>
+</button>
+<button class="spaced button buttonPrimary">
+  <div class="buttonIcon iconTel"></div>
+  <div class="buttonText">Primary Button</div>
+</button>
+<button class="spaced button buttonSecondary">
+  <div class="buttonText">Secondary Button</div>
+</button>
+<button class="spaced button buttonSecondary">
+  <div class="buttonIcon iconBgBHIMUPI"></div>
+  <div class="buttonText">Secondary Button</div>
+</button>
+<button class="spaced button buttonTertiary">
+  <div class="buttonText">Tertiary Button</div>
+</button>
+<button class="spaced button buttonTertiary">
+  <div class="buttonIcon iconStarFilled"></div>
+  <div class="buttonText">Tertiary Button</div>
+</button>
+<button class="spaced button buttonPill">
+  <div class="buttonText">Pill Button</div>
+</button>
+<button class="spaced button buttonPill">
+  <div class="buttonIcon iconTel"></div>
+  <div class="buttonText">Pill Button</div>
+</button>
+<button class="spaced button buttonAsIcon">
+  <div class="buttonIcon iconRewardsFilled"></div>
+</button>
+```
+```html
+<button class="button buttonPrimary">
+  <div class="buttonText">Primary Button</div>
+</button>
+<button class="button buttonPrimary">
+  <div class="buttonIcon iconTel"></div>
+  <div class="buttonText">Primary Button</div>
+</button>
+<button class="button buttonSecondary">
+  <div class="buttonText">Secondary Button</div>
+</button>
+<button class="button buttonSecondary">
+  <div class="buttonIcon iconBgWeChatPay"></div>
+  <div class="buttonText">Secondary Button</div>
+</button>
+<button class="button buttonTertiary">
+  <div class="buttonText">Tertiary Button</div>
+</button>
+<button class="button buttonTertiary">
+  <div class="buttonIcon iconStarFilled"></div>
+  <div class="buttonText">Tertiary Button</div>
+</button>
+<button class="button buttonPill">
+  <div class="buttonText">Pill Button</div>
+</button>
+<button class="button buttonPill">
+  <div class="buttonIcon iconTel"></div>
+  <div class="buttonText">Pill Button</div>
+</button>
+<button class="button buttonAsIcon">
+  <div class="buttonIcon iconRewardsFilled"></div>
+</button>
+```
+
+#### Button Disabled
+
+```demo:html
+<button class="spaced button buttonPrimary" disabled>
+  <div class="buttonText">Primary Button</div>
+</button>
+<button class="spaced button buttonSecondary" disabled>
+  <div class="buttonText">Secondary Button</div>
+</button>
+<button class="spaced button buttonTertiary" disabled>
+  <div class="buttonText">Tertiary Button</div>
+</button>
+<button class="spaced button buttonPill" disabled>
+  <div class="buttonText">Pill Button</div>
+</button>
+<button class="spaced button buttonAsIcon" disabled>
+  <div class="buttonIcon iconRewardsFilled"></div>
+</button>
+```
+```html
+<button class="button buttonPrimary" disabled>
+  <div class="buttonText">Primary Button</div>
+</button>
+<button class="button buttonSecondary" disabled>
+  <div class="buttonText">Secondary Button</div>
+</button>
+<button class="button buttonTertiary" disabled>
+  <div class="buttonText">Tertiary Button</div>
+</button>
+<button class="button buttonPill" disabled>
+  <div class="buttonText">Pill Button</div>
+</button>
+<button class="button buttonAsIcon" disabled>
+  <div class="buttonIcon iconRewardsFilled"></div>
+</button>
+```
+*/
+
+// Base Button
+.button {
+  border: 0px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  // Button Width
+    width: 100%;
+  &.buttonFixed {
+    width: 100%;
+  }
+  &.buttonIntrinsic {
+    width: fit-content;
+  }
+
+  // Button Size
+  height: 48px;
+  padding: 12px;
+  &.buttonSmall {
+    height: 48px;
+    padding: 12px;
+  }
+  &.buttonLarge {
+    height: 56px;
+    padding: 16px;
+  }
+
+  // Button Types
+  &.buttonPrimary {
+    background-color: $primary-500;
+    color: $white;
+
+    .buttonIcon {
+      margin-right: 8px;
+    }
+  }
+  &.buttonSecondary {
+    background-color: $white;
+    color: $primary-500;
+    border: 1px;
+    border-style: solid;
+    border-color: $primary-500;
+
+    .buttonIcon {
+      margin-right: 8px;
+      background-color: $primary-500;
+    }
+  }
+  &.buttonTertiary {
+    background-color: $white;
+    color: $primary-500;
+
+    .buttonIcon {
+      margin-right: 8px;
+      background-color: $primary-500;
+    }
+  }
+  &.buttonPill {
+    height: 32px;
+    border-radius: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: $white;
+    background-color: $primary-500;
+
+    .buttonIcon {
+      margin-right: 8px;
+    }
+  }
+  &.buttonAsIcon {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: $nobel-050;
+
+    .buttonIcon {
+      min-width: 24px;
+      min-height: 24px;
+      background-color: $primary-500;
+    }
+  }
+
+  // Button State
+  &:enabled {
+    cursor:pointer;
+  }
+  &:active {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+
+    &.buttonPrimary {
+      background-color: $primary-900;
+    }
+
+    &.buttonSecondary {
+      color: $primary-900;
+      border-color: $primary-900;
+
+      .buttonIcon {
+        background-color: $primary-900;
+      }
+    }
+
+    &.buttonTertiary {
+      color: $primary-900;
+
+      .buttonIcon {
+        background-color: $primary-900;
+      }
+    }
+
+    &.buttonPill {
+      background-color: $primary-900;
+    }
+
+    &.buttonAsIcon {
+      background-color: $nobel-200;
+
+      .buttonIcon {
+        background-color: $primary-900;
+      }
+    }
+  }
+  &:disabled {
+    filter: grayscale(100%);
+    cursor: not-allowed;
+
+    &.buttonPrimary {
+      color: $mineShaft-600;
+      background-color: $nobel-100;
+
+      .buttonIcon {
+        background-color: $nobel-500;
+      }
+    }
+
+    &.buttonSecondary {
+      color: $mineShaft-500;
+      border-color: $nobel-100;
+
+      .buttonIcon {
+        background-color: $nobel-400;
+      }
+    }
+
+    &.buttonTertiary {
+      color: $mineShaft-500;
+
+      .buttonIcon {
+        background-color: $nobel-400;
+      }
+    }
+
+    &.buttonPill {
+      color: $mineShaft-600;
+      background-color: $nobel-100;
+
+      .buttonIcon {
+        background-color: $nobel-500;
+      }
+    }
+
+    &.buttonAsIcon {
+      background-color: $nobel-050;
+
+      .buttonIcon {
+        background-color: $nobel-400;
+      }
+    }
+  }
+
+  // Button Parts: icon and text
+  .buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .buttonIcon {
+    display: inline-block;
+    vertical-align: middle;
+    @include button-icon();
+  }
+}

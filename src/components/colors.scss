@@ -1,0 +1,27 @@
+// generate color classes
+@each $name, $value in $colors {
+  .color#{$name} {
+    color: $value !important;
+  }
+}
+
+// generate background color classes
+@each $name, $value in $colors {
+  .bgColor#{$name} {
+    background-color: $value !important;
+  }
+}
+
+// generate shadow classes
+@each $name, $value in $shadows {
+  .shadow#{$name} {
+    box-shadow: $value;
+  }
+}
+
+// generate overlay classes
+@each $name, $value in $overlays {
+  .overlay#{$name} {
+    background: $value;
+  }
+}
