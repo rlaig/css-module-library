@@ -24,7 +24,6 @@ export default [
           { src: './docs/style.css', dest: './style-dist/' },
           { src: './docs/script.js', dest: './style-dist/' },
           { src: './docs/examples.js', dest: './style-dist/' },
-          { src: './docs/driver.png', dest: './style-dist/' },
         ]
       }),
       styles({
@@ -38,7 +37,6 @@ export default [
           mdcss({
             theme: mdcssTheme({
               title: 'css-module-library',
-              logo: 'driver.png',
               examples: {
                 css: ['./bundle.css'],
               }
