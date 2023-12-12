@@ -10,20 +10,20 @@ export default [
     input: 'src/bundle/index.scss',
     output: [
       {
-        file: 'style-dist/index.js',
+        file: 'docs/index.js',
         assetFileNames: '[name][extname]',
         format: 'es'
       },
     ],
     plugins: [
       del({
-        targets: ['style-dist'],
+        targets: ['docs'],
       }),
       copy({
         targets: [
-          { src: './docs/style.css', dest: './style-dist/' },
-          { src: './docs/script.js', dest: './style-dist/' },
-          { src: './docs/examples.js', dest: './style-dist/' },
+          { src: './docs-assets/style.css', dest: './docs/' },
+          { src: './docs-assets/script.js', dest: './docs/' },
+          { src: './docs-assets/examples.js', dest: './docs/' },
         ]
       }),
       styles({
@@ -41,7 +41,7 @@ export default [
                 css: ['./bundle.css'],
               }
             }),
-            destination: 'style-dist'
+            destination: 'docs'
           })
         ]
       }),

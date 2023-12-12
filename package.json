@@ -5,7 +5,7 @@
   "files": [
     "dist",
     "docs-dist",
-    "style-dist"
+    "docs"
   ],
   "sideEffects": false,
   "type": "module",

@@ -16,7 +16,7 @@ const styleModule = (styleName, path) => ({
   ],
   plugins: [
     del({
-      targets: ['./style-dist'],
+      targets: ['./docs'],
     }),
     styles({
       mode: ["extract", styleName+".module.css"],
@@ -33,20 +33,20 @@ const docsBundle = {
   input: 'src/bundle/index.scss',
   output: [
     {
-      file: 'style-dist/index.js',
+      file: 'docs/index.js',
       assetFileNames: '[name][extname]',
       format: 'es'
     },
   ],
   plugins: [
     del({
-      targets: ['dist/*.js','style-dist'],
+      targets: ['dist/*.js','docs'],
     }),
     copy({
       targets: [
-        { src: './docs/style.css', dest: './style-dist/' },
-        { src: './docs/script.js', dest: './style-dist/' },
-        { src: './docs/examples.js', dest: './style-dist/' },
+        { src: './docs-assets/style.css', dest: './docs/' },
+        { src: './docs-assets/script.js', dest: './docs/' },
+        { src: './docs-assets/examples.js', dest: './docs/' },
       ]
     }),
     styles({
@@ -64,7 +64,7 @@ const docsBundle = {
               css: ['./bundle.css'],
             }
           }),
-          destination: 'style-dist'
+          destination: 'docs'
         })
       ]
     }),

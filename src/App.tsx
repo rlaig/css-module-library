@@ -19,7 +19,7 @@ export const App = () => {
   <div className={demo.clear5}></div>
   <h2>CSS Demo Page</h2>
   <div className={demo.clear}></div>
-  <p>This is a demo page to showcase on mobile web view, looking for the <a href="/style-dist/">documentation</a>?</p>
+  <p>This is a demo page to showcase on mobile web view, looking for the <a href="/docs/">documentation</a>?</p>
   <div className={demo.clear5}></div>
   
   <h3>Typography & Fonts</h3>
